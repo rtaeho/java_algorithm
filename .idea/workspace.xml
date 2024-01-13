@@ -64,9 +64,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BOJ11382">
-    <configuration name="BOJ10430" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.inputoutput.BOJ10430" />
+  <component name="RunManager" selected="Application.BOJ10171">
+    <configuration name="BOJ10171" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.inputoutput.BOJ10171" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ10926" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.inputoutput.BOJ10926" />
+    <configuration name="BOJ10430" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.inputoutput.BOJ10430" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -132,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ10171" />
         <item itemvalue="Application.BOJ11382" />
         <item itemvalue="Application.BOJ2588" />
         <item itemvalue="Application.BOJ10430" />
         <item itemvalue="Application.BOJ18108" />
-        <item itemvalue="Application.BOJ10926" />
       </list>
     </recent_temporary>
   </component>
