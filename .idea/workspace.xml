@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start" />
+    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
+      <change afterPath="$PROJECT_DIR$/src/backjoon/loop/BOJ2439.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +51,7 @@
     "Application.BOJ11382.executor": "Run",
     "Application.BOJ1330.executor": "Run",
     "Application.BOJ18108.executor": "Run",
+    "Application.BOJ2438.executor": "Run",
     "Application.BOJ2480.executor": "Run",
     "Application.BOJ2525.executor": "Run",
     "Application.BOJ25314.executor": "Run",
@@ -75,20 +78,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BOJ2438">
-    <configuration name="BOJ10950" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.loop.BOJ10950" />
-      <module name="java_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backjoon.loop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.BOJ2439">
     <configuration name="BOJ11022" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.loop.BOJ11022" />
       <module name="java_algorithm" />
@@ -104,6 +94,19 @@
     </configuration>
     <configuration name="BOJ2438" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.loop.BOJ2438" />
+      <module name="java_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backjoon.loop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ2439" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.loop.BOJ2439" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -143,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ2439" />
         <item itemvalue="Application.BOJ2438" />
         <item itemvalue="Application.BOJ11022" />
         <item itemvalue="Application.BOJ25314" />
         <item itemvalue="Application.BOJ8393" />
-        <item itemvalue="Application.BOJ10950" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +171,7 @@
       <updated>1704873674384</updated>
       <workItem from="1704873676452" duration="7097000" />
       <workItem from="1704962693861" duration="5000" />
-      <workItem from="1704962859573" duration="18985000" />
+      <workItem from="1704962859573" duration="19348000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
