@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/backjoon/string/BOJ11654.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/string/BOJ9086.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ11654.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/string/BOJ11654.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,7 @@
     "Application.BOJ10998.executor": "Run",
     "Application.BOJ11022.executor": "Run",
     "Application.BOJ11382.executor": "Run",
+    "Application.BOJ11654.executor": "Run",
     "Application.BOJ1330.executor": "Run",
     "Application.BOJ1546.executor": "Run",
     "Application.BOJ18108.executor": "Run",
@@ -92,13 +92,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BOJ9086">
+  <component name="RunManager" selected="Application.BOJ11654">
     <configuration name="BOJ10811" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.onedimentionarrary.BOJ10811" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="backjoon.onedimentionarrary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ11654" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.string.BOJ11654" />
+      <module name="java_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backjoon.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,19 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ5597" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.onedimentionarrary.BOJ5597" />
-      <module name="java_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backjoon.onedimentionarrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BOJ9086" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.string.BOJ9086" />
       <module name="java_algorithm" />
@@ -160,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ11654" />
         <item itemvalue="Application.BOJ9086" />
         <item itemvalue="Application.BOJ27866" />
         <item itemvalue="Application.BOJ1546" />
         <item itemvalue="Application.BOJ10811" />
-        <item itemvalue="Application.BOJ5597" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +185,7 @@
       <updated>1704873674384</updated>
       <workItem from="1704873676452" duration="7097000" />
       <workItem from="1704962693861" duration="5000" />
-      <workItem from="1704962859573" duration="32159000" />
+      <workItem from="1704962859573" duration="32467000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
