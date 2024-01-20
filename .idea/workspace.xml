@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/backjoon/string/BOJ2743.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/string/BOJ11654.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/string/BOJ9086.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +73,7 @@
     "Application.BOJ2884.executor": "Run",
     "Application.BOJ5597.executor": "Run",
     "Application.BOJ8393.executor": "Run",
+    "Application.BOJ9086.executor": "Run",
     "Application.BOJ9498.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.backjoon2557.executor": "Run",
@@ -90,22 +92,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BOJ27866">
+  <component name="RunManager" selected="Application.BOJ9086">
     <configuration name="BOJ10811" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.onedimentionarrary.BOJ10811" />
-      <module name="java_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backjoon.onedimentionarrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BOJ10813" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.onedimentionarrary.BOJ10813" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -156,13 +145,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BOJ9086" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.string.BOJ9086" />
+      <module name="java_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backjoon.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ9086" />
         <item itemvalue="Application.BOJ27866" />
         <item itemvalue="Application.BOJ1546" />
         <item itemvalue="Application.BOJ10811" />
         <item itemvalue="Application.BOJ5597" />
-        <item itemvalue="Application.BOJ10813" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +185,7 @@
       <updated>1704873674384</updated>
       <workItem from="1704873676452" duration="7097000" />
       <workItem from="1704962693861" duration="5000" />
-      <workItem from="1704962859573" duration="31525000" />
+      <workItem from="1704962859573" duration="32159000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
