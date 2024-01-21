@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ10988.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ1157.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ2444.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ2941.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ3003.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ25083.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ25083.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ1316.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +74,7 @@
     "Application.BOJ2753.executor": "Run",
     "Application.BOJ27866.executor": "Run",
     "Application.BOJ2884.executor": "Run",
+    "Application.BOJ2941.executor": "Run",
     "Application.BOJ3003.executor": "Run",
     "Application.BOJ5597.executor": "Run",
     "Application.BOJ8393.executor": "Run",
@@ -195,7 +190,7 @@
       <updated>1704873674384</updated>
       <workItem from="1704873676452" duration="7097000" />
       <workItem from="1704962693861" duration="5000" />
-      <workItem from="1704962859573" duration="43433000" />
+      <workItem from="1704962859573" duration="43903000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
