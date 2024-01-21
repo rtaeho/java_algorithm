@@ -102,26 +102,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BOJ10988">
+  <component name="RunManager" selected="Application.BOJ2941">
     <configuration name="BOJ10988" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ10988" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="backjoon.advanced1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BOJ11720" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.string.BOJ11720" />
-      <module name="java_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backjoon.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,6 +142,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BOJ2941" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ2941" />
+      <module name="java_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backjoon.advanced1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BOJ3003" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ3003" />
       <module name="java_algorithm" />
@@ -170,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ2941" />
         <item itemvalue="Application.BOJ10988" />
         <item itemvalue="Application.BOJ2444" />
         <item itemvalue="Application.BOJ3003" />
         <item itemvalue="Application.BOJ25083" />
-        <item itemvalue="Application.BOJ11720" />
       </list>
     </recent_temporary>
   </component>
