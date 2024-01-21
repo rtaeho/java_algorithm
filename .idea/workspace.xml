@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ25083.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ10988.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ1157.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ2444.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ2941.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ3003.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ25083.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ25083.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +59,7 @@
     "Application.BOJ10950.executor": "Run",
     "Application.BOJ10951.executor": "Run",
     "Application.BOJ10952.executor": "Run",
+    "Application.BOJ10988.executor": "Run",
     "Application.BOJ10998.executor": "Run",
     "Application.BOJ11022.executor": "Run",
     "Application.BOJ11382.executor": "Run",
@@ -64,7 +70,9 @@
     "Application.BOJ18108.executor": "Run",
     "Application.BOJ2438.executor": "Run",
     "Application.BOJ2439.executor": "Run",
+    "Application.BOJ2444.executor": "Run",
     "Application.BOJ2480.executor": "Run",
+    "Application.BOJ25083.executor": "Run",
     "Application.BOJ2525.executor": "Run",
     "Application.BOJ25314.executor": "Run",
     "Application.BOJ2588.executor": "Run",
@@ -72,6 +80,7 @@
     "Application.BOJ2753.executor": "Run",
     "Application.BOJ27866.executor": "Run",
     "Application.BOJ2884.executor": "Run",
+    "Application.BOJ3003.executor": "Run",
     "Application.BOJ5597.executor": "Run",
     "Application.BOJ8393.executor": "Run",
     "Application.BOJ9086.executor": "Run",
@@ -93,13 +102,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BOJ11720">
-    <configuration name="BOJ11654" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.string.BOJ11654" />
+  <component name="RunManager" selected="Application.BOJ10988">
+    <configuration name="BOJ10988" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ10988" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjoon.string.*" />
+          <option name="PATTERN" value="backjoon.advanced1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ1546" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.onedimentionarrary.BOJ1546" />
+    <configuration name="BOJ2444" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ2444" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjoon.onedimentionarrary.*" />
+          <option name="PATTERN" value="backjoon.advanced1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ27866" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.string.BOJ27866" />
+    <configuration name="BOJ25083" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ25083" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjoon.string.*" />
+          <option name="PATTERN" value="backjoon.advanced1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ9086" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.string.BOJ9086" />
+    <configuration name="BOJ3003" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ3003" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjoon.string.*" />
+          <option name="PATTERN" value="backjoon.advanced1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ10988" />
+        <item itemvalue="Application.BOJ2444" />
+        <item itemvalue="Application.BOJ3003" />
+        <item itemvalue="Application.BOJ25083" />
         <item itemvalue="Application.BOJ11720" />
-        <item itemvalue="Application.BOJ11654" />
-        <item itemvalue="Application.BOJ9086" />
-        <item itemvalue="Application.BOJ27866" />
-        <item itemvalue="Application.BOJ1546" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +195,7 @@
       <updated>1704873674384</updated>
       <workItem from="1704873676452" duration="7097000" />
       <workItem from="1704962693861" duration="5000" />
-      <workItem from="1704962859573" duration="38123000" />
+      <workItem from="1704962859573" duration="43433000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
