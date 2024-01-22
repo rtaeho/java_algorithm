@@ -15,7 +15,7 @@ N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프�
 7 35
 
  */
-package backjoon.onedimentionarrary;
+package backjoon.onedimentionalarrary;
 
 import java.io.BufferedReader;
 import java.io.IOException;

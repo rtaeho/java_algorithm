@@ -43,7 +43,7 @@ X대학 M교수님은 프로그래밍 수업을 맡고 있다. 교실엔 학생�
 2
 8
  */
-package backjoon.onedimentionarrary;
+package backjoon.onedimentionalarrary;
 
 import java.io.BufferedReader;
 import java.io.IOException;
