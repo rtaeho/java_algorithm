@@ -25,7 +25,7 @@
 10
 각 수를 42로 나눈 나머지는 1, 2, 3, 4, 5, 6, 7, 8, 9, 10이다.
  */
-package backjoon.onedimentionarrary;
+package backjoon.onedimentionalarrary;
 
 import java.io.BufferedReader;
 import java.io.IOException;

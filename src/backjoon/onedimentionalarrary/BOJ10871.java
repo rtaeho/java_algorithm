@@ -17,7 +17,7 @@ X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한
 1 4 2 3
 
  */
-package backjoon.onedimentionarrary;
+package backjoon.onedimentionalarrary;
 
 import java.io.BufferedReader;
 import java.io.IOException;

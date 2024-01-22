@@ -25,7 +25,7 @@
 예제 출력 1
 3 4 1 2 5
  */
-package backjoon.onedimentionarrary;
+package backjoon.onedimentionalarrary;
 
 import java.io.BufferedReader;
 import java.io.IOException;
