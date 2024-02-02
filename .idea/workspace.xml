@@ -5,98 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ10988.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ10988.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ1157.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ1157.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ1316.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ1316.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ2444.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ2444.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ25083.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ25083.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ25206.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ25206.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ2941.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ2941.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/advanced1/BOJ3003.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/advanced1/BOJ3003.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/conditional/BOJ1330.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/conditional/BOJ1330.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/conditional/BOJ14681.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/conditional/BOJ14681.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/conditional/BOJ2480.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/conditional/BOJ2480.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/conditional/BOJ2525.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/conditional/BOJ2525.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/conditional/BOJ2753.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/conditional/BOJ2753.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/conditional/BOJ2884.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/conditional/BOJ2884.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/conditional/BOJ9498.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/conditional/BOJ9498.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/factorsmultiplesanddecimals/BOJ11653.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/factorsmultiplesanddecimals/BOJ11653.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/factorsmultiplesanddecimals/BOJ1978.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/factorsmultiplesanddecimals/BOJ1978.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/factorsmultiplesanddecimals/BOJ2051.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/factorsmultiplesanddecimals/BOJ2051.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/factorsmultiplesanddecimals/BOJ25i81.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/factorsmultiplesanddecimals/BOJ25i81.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/factorsmultiplesanddecimals/BOJ5086.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/factorsmultiplesanddecimals/BOJ5086.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/factorsmultiplesanddecimals/BOJ9506.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/factorsmultiplesanddecimals/BOJ9506.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ10101.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ10101.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ1085.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ1085.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ14215.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ14215.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ15894.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ15894.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ27323.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ27323.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ3009.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ3009.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ5073.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ5073.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/gemoetry/BOJ9063.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/gemoetry/BOJ9063.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/generalmath/BOJ11005.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/generalmath/BOJ11005.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/generalmath/BOJ1193.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/generalmath/BOJ1193.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/generalmath/BOJ2292.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/generalmath/BOJ2292.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/generalmath/BOJ2720.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/generalmath/BOJ2720.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/generalmath/BOJ2745.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/generalmath/BOJ2745.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/generalmath/BOJ2869.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/generalmath/BOJ2869.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/generalmath/BOJ2903.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/generalmath/BOJ2903.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ1000.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ1000.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ1001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ1001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ10171.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ10171.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ10172.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ10172.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ10430.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ10430.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ10869.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ10869.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ10926.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ10926.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ10998.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ10998.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ11382.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ11382.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ18108.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ18108.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ2557.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ2557.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/inputoutput/BOJ2588.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/inputoutput/BOJ2588.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ10950.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ10950.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ10951.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ10951.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ10952.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ10952.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ11021.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ11021.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ11022.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ11022.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ15552.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ15552.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ2438.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ2438.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ2439.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ2439.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ25304.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ25304.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ25314.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ25314.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ2739.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ2739.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/loop/BOJ8393.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/loop/BOJ8393.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ10807.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ10807.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ10810.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ10810.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ10811.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ10811.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ10813.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ10813.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ10818.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ10818.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ10871.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ10871.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ1546.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ1546.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ2562.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ2562.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ3052.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ3052.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/onedimentionalarrary/BOJ5597.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/onedimentionalarrary/BOJ5597.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ10809.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ10809.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ1152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ1152.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ11654.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ11654.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ11718.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ11718.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ11720.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ11720.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ2675.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ2675.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ2743.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ2743.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ27866.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ27866.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ2908.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ2908.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ5622.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ5622.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/string/BOJ9086.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/string/BOJ9086.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24262.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/timecomplexity/BOJ24262.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24263.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/timecomplexity/BOJ24263.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24264.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/timecomplexity/BOJ24264.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24265.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/timecomplexity/BOJ24265.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24266.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/timecomplexity/BOJ24266.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24267.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/timecomplexity/BOJ24267.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24313.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/timecomplexity/BOJ24313.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/twodimentionalarray/BOJ10798.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/twodimentionalarray/BOJ10798.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/twodimentionalarray/BOJ2563.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/twodimentionalarray/BOJ2563.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/twodimentionalarray/BOJ2566.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/twodimentionalarray/BOJ2566.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backjoon/twodimentionalarray/BOJ2738.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/twodimentionalarray/BOJ2738.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backjoon/practice/bruteforce/BOJ2798.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backjoon/practice/bruteforce/BOJ2798.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -288,7 +198,7 @@
       <updated>1704873674384</updated>
       <workItem from="1704873676452" duration="7097000" />
       <workItem from="1704962693861" duration="5000" />
-      <workItem from="1704962859573" duration="68334000" />
+      <workItem from="1704962859573" duration="69350000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
