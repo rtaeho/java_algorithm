@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24263.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24264.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24265.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24266.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24267.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/timecomplexity/BOJ24313.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +63,7 @@
     "Application.BOJ1330.executor": "Run",
     "Application.BOJ1546.executor": "Run",
     "Application.BOJ18108.executor": "Run",
+    "Application.BOJ24313.executor": "Run",
     "Application.BOJ2438.executor": "Run",
     "Application.BOJ2439.executor": "Run",
     "Application.BOJ2444.executor": "Run",
@@ -102,7 +99,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BOJ2941">
+  <component name="RunManager" selected="Application.BOJ24313">
     <configuration name="BOJ10988" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ10988" />
       <module name="java_algorithm" />
@@ -116,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ2444" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ2444" />
+    <configuration name="BOJ24313" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.timecomplexity.BOJ24313" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjoon.advanced1.*" />
+          <option name="PATTERN" value="backjoon.timecomplexity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,8 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ25083" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ25083" />
+    <configuration name="BOJ2444" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.advanced1.BOJ2444" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -170,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ24313" />
         <item itemvalue="Application.BOJ2941" />
         <item itemvalue="Application.BOJ10988" />
         <item itemvalue="Application.BOJ2444" />
         <item itemvalue="Application.BOJ3003" />
-        <item itemvalue="Application.BOJ25083" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +192,7 @@
       <updated>1704873674384</updated>
       <workItem from="1704873676452" duration="7097000" />
       <workItem from="1704962693861" duration="5000" />
-      <workItem from="1704962859573" duration="66568000" />
+      <workItem from="1704962859573" duration="67982000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
