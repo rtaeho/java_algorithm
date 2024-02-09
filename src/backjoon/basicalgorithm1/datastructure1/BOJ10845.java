@@ -71,11 +71,11 @@ public class BOJ10845 {
             switch (S) {
                 case "push":
                     last = Integer.parseInt(st.nextToken());
-                    que.offer(last);
+                    que.add(last);
                     break;
                 case "pop":
                     if (que.isEmpty()) sb.append(-1).append("\n");
-                    else sb.append(que.poll()).append("\n");
+                    else sb.append(que.remove()).append("\n");
                     break;
                 case "size":
                     sb.append(que.size()).append("\n");
@@ -86,7 +86,7 @@ public class BOJ10845 {
                     break;
                 case "front":
                     if (que.isEmpty()) sb.append(-1).append("\n");
-                    else sb.append(que.peek()).append("\n");
+                    else sb.append(que.element()).append("\n");
                     break;
                 case "back":
                     if (que.isEmpty()) sb.append(-1).append("\n");
