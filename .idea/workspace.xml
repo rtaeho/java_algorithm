@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/backjoon/basicalgorithm1/datastructure1/BOJ10866.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backjoon/basicalgorithm1/datastructure1practice/BOJ17413.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +65,7 @@
     "Application.BOJ1330.executor": "Run",
     "Application.BOJ1406.executor": "Run",
     "Application.BOJ1546.executor": "Run",
+    "Application.BOJ17413.executor": "Run",
     "Application.BOJ18108.executor": "Run",
     "Application.BOJ24313.executor": "Run",
     "Application.BOJ2438.executor": "Run",
@@ -108,7 +109,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ1158">
+  <component name="RunManager" selected="Application.BOJ17413">
     <configuration name="BOJ1158" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="backjoon.basicalgorithm1.datastructure1.BOJ1158" />
       <module name="java_algorithm" />
@@ -135,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ24313" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.practice.timecomplexity.BOJ24313" />
+    <configuration name="BOJ17413" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.basicalgorithm1.datastructure1practice.BOJ17413" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjoon.practice.timecomplexity.*" />
+          <option name="PATTERN" value="backjoon.basicalgorithm1.datastructure1practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ2941" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjoon.practice.advanced1.BOJ2941" />
+    <configuration name="BOJ24313" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon.practice.timecomplexity.BOJ24313" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjoon.practice.advanced1.*" />
+          <option name="PATTERN" value="backjoon.practice.timecomplexity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ17413" />
         <item itemvalue="Application.BOJ1158" />
         <item itemvalue="Application.BOJ1406" />
         <item itemvalue="Application.BOJ9093" />
         <item itemvalue="Application.BOJ24313" />
-        <item itemvalue="Application.BOJ2941" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +206,7 @@
       <workItem from="1706864426562" duration="5646000" />
       <workItem from="1707038074324" duration="4000" />
       <workItem from="1707038086025" duration="6566000" />
-      <workItem from="1707400357085" duration="5078000" />
+      <workItem from="1707400357085" duration="8465000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
