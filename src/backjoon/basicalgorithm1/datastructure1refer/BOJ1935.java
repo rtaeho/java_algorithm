@@ -40,7 +40,7 @@ public class BOJ1935 {
         int N = Integer.parseInt(br.readLine());
         String str = br.readLine();
         int[] arr = new int[N];
-        Stack<Double> s = new Stack<>();
+        Stack<Double> s = new Stack<>(); // 더블형으로 선언
 
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(br.readLine());
@@ -74,4 +74,3 @@ public class BOJ1935 {
         br.close();
     }
 }
-
