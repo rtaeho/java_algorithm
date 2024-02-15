@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/backjoon/basicalgorithm1/datastructure1refer/BOJ10808.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/datastructure1refer/BOJ10820.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,7 @@
     "Application.BOJ10811.executor": "Run",
     "Application.BOJ10813.executor": "Run",
     "Application.BOJ10818.executor": "Run",
+    "Application.BOJ10820.executor": "Run",
     "Application.BOJ10869.executor": "Run",
     "Application.BOJ10871.executor": "Run",
     "Application.BOJ10926.executor": "Run",
@@ -113,7 +114,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ10808">
+  <component name="RunManager" selected="Application.BOJ10820">
     <configuration name="BOJ10799" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.datastructure1practice.BOJ10799" />
       <module name="java_algorithm" />
@@ -129,6 +130,19 @@
     </configuration>
     <configuration name="BOJ10808" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.datastructure1refer.BOJ10808" />
+      <module name="java_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon.basicalgorithm1.datastructure1refer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ10820" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.datastructure1refer.BOJ10820" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -166,26 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ17413" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.datastructure1practice.BOJ17413" />
-      <module name="java_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baekjoon.basicalgorithm1.datastructure1practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ10820" />
         <item itemvalue="Application.BOJ10808" />
         <item itemvalue="Application.BOJ17299" />
         <item itemvalue="Application.BOJ17298" />
         <item itemvalue="Application.BOJ10799" />
-        <item itemvalue="Application.BOJ17413" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +212,7 @@
       <workItem from="1707038074324" duration="4000" />
       <workItem from="1707038086025" duration="6566000" />
       <workItem from="1707400357085" duration="32373000" />
-      <workItem from="1707886729649" duration="378000" />
+      <workItem from="1707886729649" duration="7587000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
