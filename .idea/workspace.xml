@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/math1ref/BOJ11576.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/math1/BOJ2089.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/math1/BOJ2089.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/practice/inputoutput/BOJ2558" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/practice/inputoutput/BOJ2558.java" beforeDir="false" />
-    </list>
+    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -229,7 +223,7 @@
       <workItem from="1708499447638" duration="2035000" />
       <workItem from="1708504591587" duration="5320000" />
       <workItem from="1708762943565" duration="2270000" />
-      <workItem from="1709284164474" duration="4996000" />
+      <workItem from="1709284164474" duration="5237000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
