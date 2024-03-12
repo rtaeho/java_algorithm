@@ -121,7 +121,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ9095">
+  <component name="RunManager" selected="Application.BOJ25305">
     <configuration name="BOJ11576" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.math1ref.BOJ11576" />
       <module name="java_algorithm" />
@@ -161,12 +161,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ2609" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.math1.BOJ2609" />
+    <configuration name="BOJ25305" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.sorting.BOJ25305" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekjoon.basicalgorithm1.math1.*" />
+          <option name="PATTERN" value="baekjoon.practice.sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ25305" />
         <item itemvalue="Application.BOJ9095" />
         <item itemvalue="Application.BOJ11576" />
         <item itemvalue="Application.BOJ1929" />
         <item itemvalue="Application.BOJ1934" />
-        <item itemvalue="Application.BOJ2609" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +228,7 @@
       <workItem from="1708762943565" duration="2270000" />
       <workItem from="1709284164474" duration="5237000" />
       <workItem from="1709453334485" duration="10397000" />
-      <workItem from="1709821767167" duration="19472000" />
+      <workItem from="1709821767167" duration="20822000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
