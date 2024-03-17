@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/sorting/BOJ11650.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baekjoon/practice/sorting/BOJ11651.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/practice/sorting/BOJ11651.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,7 @@
     "Application.BOJ11382.executor": "Run",
     "Application.BOJ11576.executor": "Run",
     "Application.BOJ1158.executor": "Run",
+    "Application.BOJ11651.executor": "Run",
     "Application.BOJ11654.executor": "Run",
     "Application.BOJ11656.executor": "Run",
     "Application.BOJ11720.executor": "Run",
@@ -123,7 +124,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ25305">
+  <component name="RunManager" selected="Application.BOJ11651">
     <configuration name="BOJ11576" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.math1ref.BOJ11576" />
       <module name="java_algorithm" />
@@ -137,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ1929" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.math1.BOJ1929" />
+    <configuration name="BOJ11651" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.sorting.BOJ11651" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekjoon.basicalgorithm1.math1.*" />
+          <option name="PATTERN" value="baekjoon.practice.sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,8 +151,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ1934" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.math1.BOJ1934" />
+    <configuration name="BOJ1929" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.math1.BOJ1929" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -191,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ11651" />
         <item itemvalue="Application.BOJ25305" />
         <item itemvalue="Application.BOJ9095" />
         <item itemvalue="Application.BOJ11576" />
         <item itemvalue="Application.BOJ1929" />
-        <item itemvalue="Application.BOJ1934" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +231,7 @@
       <workItem from="1708762943565" duration="2270000" />
       <workItem from="1709284164474" duration="5237000" />
       <workItem from="1709453334485" duration="10397000" />
-      <workItem from="1709821767167" duration="29083000" />
+      <workItem from="1709821767167" duration="31628000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
