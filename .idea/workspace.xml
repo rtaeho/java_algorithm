@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/factorsmultiplesanddecimals/BOJ4143.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/factorsmultiplesanddecimals/BOJ4948.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +102,7 @@
     "Application.BOJ2941.executor": "Run",
     "Application.BOJ3003.executor": "Run",
     "Application.BOJ4143.executor": "Run",
+    "Application.BOJ4948.executor": "Run",
     "Application.BOJ5597.executor": "Run",
     "Application.BOJ8393.executor": "Run",
     "Application.BOJ9086.executor": "Run",
@@ -130,7 +131,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ4143">
+  <component name="RunManager" selected="Application.BOJ4948">
     <configuration name="BOJ13241" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.practice.factorsmultiplesanddecimals.BOJ13241" />
       <module name="java_algorithm" />
@@ -150,19 +151,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="baekjoon.practice.factorsmultiplesanddecimals.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BOJ1764" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.mapandset.BOJ1764" />
-      <module name="java_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baekjoon.practice.mapandset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,13 +184,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BOJ4948" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.factorsmultiplesanddecimals.BOJ4948" />
+      <module name="java_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon.practice.factorsmultiplesanddecimals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ4948" />
         <item itemvalue="Application.BOJ4143" />
         <item itemvalue="Application.BOJ2485" />
         <item itemvalue="Application.BOJ1735" />
         <item itemvalue="Application.BOJ13241" />
-        <item itemvalue="Application.BOJ1764" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +249,7 @@
       <workItem from="1711416241125" duration="26023000" />
       <workItem from="1711699265769" duration="2635000" />
       <workItem from="1711778434515" duration="1604000" />
-      <workItem from="1711862032349" duration="2529000" />
+      <workItem from="1711862032349" duration="12574000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
