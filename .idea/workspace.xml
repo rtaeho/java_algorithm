@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ12789.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ18258.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +81,7 @@
     "Application.BOJ17413.executor": "Run",
     "Application.BOJ1764.executor": "Run",
     "Application.BOJ18108.executor": "Run",
+    "Application.BOJ18258.executor": "Run",
     "Application.BOJ1929.executor": "Run",
     "Application.BOJ1934.executor": "Run",
     "Application.BOJ24313.executor": "Run",
@@ -134,7 +135,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ4949">
+  <component name="RunManager" selected="Application.BOJ18258">
     <configuration name="BOJ13909" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.practice.factorsmultiplesanddecimals.BOJ13909" />
       <module name="java_algorithm" />
@@ -148,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ4143" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.factorsmultiplesanddecimals.BOJ4143" />
+    <configuration name="BOJ18258" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ18258" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekjoon.practice.factorsmultiplesanddecimals.*" />
+          <option name="PATTERN" value="baekjoon.practice.stackqueuedequeue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ18258" />
         <item itemvalue="Application.BOJ4949" />
         <item itemvalue="Application.BOJ4949 (1)" />
         <item itemvalue="Application.BOJ13909" />
         <item itemvalue="Application.BOJ4948" />
-        <item itemvalue="Application.BOJ4143" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +247,7 @@
       <workItem from="1711416241125" duration="26023000" />
       <workItem from="1711699265769" duration="2635000" />
       <workItem from="1711778434515" duration="1604000" />
-      <workItem from="1711862032349" duration="39103000" />
+      <workItem from="1711862032349" duration="45192000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
