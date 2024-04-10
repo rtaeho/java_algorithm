@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ11866.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ28279.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,105 +38,105 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BOJ1000.executor": "Run",
-    "Application.BOJ1001.executor": "Run",
-    "Application.BOJ10171.executor": "Run",
-    "Application.BOJ10172.executor": "Run",
-    "Application.BOJ10430.executor": "Run",
-    "Application.BOJ10799.executor": "Run",
-    "Application.BOJ10808.executor": "Run",
-    "Application.BOJ10810.executor": "Run",
-    "Application.BOJ10811.executor": "Run",
-    "Application.BOJ10813.executor": "Run",
-    "Application.BOJ10818.executor": "Run",
-    "Application.BOJ10820.executor": "Run",
-    "Application.BOJ10824.executor": "Run",
-    "Application.BOJ10869.executor": "Run",
-    "Application.BOJ10871.executor": "Run",
-    "Application.BOJ10926.executor": "Run",
-    "Application.BOJ10950.executor": "Run",
-    "Application.BOJ10951.executor": "Run",
-    "Application.BOJ10952.executor": "Run",
-    "Application.BOJ10988.executor": "Run",
-    "Application.BOJ10998.executor": "Run",
-    "Application.BOJ11022.executor": "Run",
-    "Application.BOJ11382.executor": "Run",
-    "Application.BOJ11576.executor": "Run",
-    "Application.BOJ1158.executor": "Run",
-    "Application.BOJ11651.executor": "Run",
-    "Application.BOJ11654.executor": "Run",
-    "Application.BOJ11656.executor": "Run",
-    "Application.BOJ11720.executor": "Run",
-    "Application.BOJ11866.executor": "Run",
-    "Application.BOJ13241.executor": "Run",
-    "Application.BOJ1330.executor": "Run",
-    "Application.BOJ13909.executor": "Run",
-    "Application.BOJ1406.executor": "Run",
-    "Application.BOJ1546.executor": "Run",
-    "Application.BOJ1620.executor": "Run",
-    "Application.BOJ17298.executor": "Run",
-    "Application.BOJ17299.executor": "Run",
-    "Application.BOJ1735.executor": "Run",
-    "Application.BOJ17413.executor": "Run",
-    "Application.BOJ1764.executor": "Run",
-    "Application.BOJ18108.executor": "Run",
-    "Application.BOJ18258.executor": "Run",
-    "Application.BOJ1929.executor": "Run",
-    "Application.BOJ1934.executor": "Run",
-    "Application.BOJ24313.executor": "Run",
-    "Application.BOJ2438.executor": "Run",
-    "Application.BOJ2439.executor": "Run",
-    "Application.BOJ2444.executor": "Run",
-    "Application.BOJ2480.executor": "Run",
-    "Application.BOJ2485.executor": "Run",
-    "Application.BOJ25083.executor": "Run",
-    "Application.BOJ2525.executor": "Run",
-    "Application.BOJ25305.executor": "Run",
-    "Application.BOJ25314.executor": "Run",
-    "Application.BOJ2588.executor": "Run",
-    "Application.BOJ2609.executor": "Run",
-    "Application.BOJ2734.executor": "Run",
-    "Application.BOJ2739.executor": "Run",
-    "Application.BOJ2753.executor": "Run",
-    "Application.BOJ27866.executor": "Run",
-    "Application.BOJ2884.executor": "Run",
-    "Application.BOJ2941.executor": "Run",
-    "Application.BOJ3003.executor": "Run",
-    "Application.BOJ4143.executor": "Run",
-    "Application.BOJ4948.executor": "Run",
-    "Application.BOJ4949 (1).executor": "Run",
-    "Application.BOJ4949.executor": "Run",
-    "Application.BOJ5597.executor": "Run",
-    "Application.BOJ8393.executor": "Run",
-    "Application.BOJ9086.executor": "Run",
-    "Application.BOJ9093.executor": "Run",
-    "Application.BOJ9095.executor": "Run",
-    "Application.BOJ9498.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.backjoon2557.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/ryu/IdeaProjects/java_algorithm/src/Main.java",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BOJ1000.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1001.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10171.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10172.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10430.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10799.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10808.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10810.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10811.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10813.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10818.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10820.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10824.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10869.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10871.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10926.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10950.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10951.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10952.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10988.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ10998.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11022.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11382.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11576.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1158.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11651.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11654.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11656.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11720.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ11866.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ13241.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1330.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ13909.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1406.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1546.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1620.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ17298.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ17299.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1735.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ17413.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1764.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ18108.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ18258.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1929.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ1934.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ24313.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2438.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2439.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2444.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2480.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2485.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ25083.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2525.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ25305.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ25314.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2588.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2609.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2734.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2739.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2753.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ27866.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2884.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ2941.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ3003.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ4143.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ4948.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ4949 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ4949.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ5597.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ8393.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ9086.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ9093.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ9095.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ9498.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.backjoon2557.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ryu/IdeaProjects/java_algorithm/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ11866">
+  <component name="RunManager" selected="Application.BOJ28279">
     <configuration name="BOJ11866" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ11866" />
       <module name="java_algorithm" />
@@ -150,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ13909" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.factorsmultiplesanddecimals.BOJ13909" />
+    <configuration name="BOJ18258" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ18258" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekjoon.practice.factorsmultiplesanddecimals.*" />
+          <option name="PATTERN" value="baekjoon.practice.stackqueuedequeue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,8 +163,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ18258" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ18258" />
+    <configuration name="BOJ28279" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ28279" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -198,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ28279" />
         <item itemvalue="Application.BOJ11866" />
         <item itemvalue="Application.BOJ18258" />
         <item itemvalue="Application.BOJ4949" />
         <item itemvalue="Application.BOJ4949 (1)" />
-        <item itemvalue="Application.BOJ13909" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +248,8 @@
       <workItem from="1711416241125" duration="26023000" />
       <workItem from="1711699265769" duration="2635000" />
       <workItem from="1711778434515" duration="1604000" />
-      <workItem from="1711862032349" duration="60161000" />
+      <workItem from="1711862032349" duration="61961000" />
+      <workItem from="1712742207795" duration="1363000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
