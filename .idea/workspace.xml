@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ2346.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ24511.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ2346.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/practice/stackqueuedequeue/BOJ2346.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +91,7 @@
     "Application.BOJ2438.executor": "Run",
     "Application.BOJ2439.executor": "Run",
     "Application.BOJ2444.executor": "Run",
+    "Application.BOJ24511.executor": "Run",
     "Application.BOJ2480.executor": "Run",
     "Application.BOJ2485.executor": "Run",
     "Application.BOJ25083.executor": "Run",
@@ -138,7 +140,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ2346">
+  <component name="RunManager" selected="Application.BOJ24511">
     <configuration name="BOJ11866" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ11866" />
       <module name="java_algorithm" />
@@ -178,6 +180,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BOJ24511" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ24511" />
+      <module name="java_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon.practice.stackqueuedequeue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BOJ28279" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ28279" />
       <module name="java_algorithm" />
@@ -191,26 +206,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ4949" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ4949" />
-      <module name="java_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baekjoon.practice.stackqueuedequeue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ24511" />
         <item itemvalue="Application.BOJ2346" />
         <item itemvalue="Application.BOJ28279" />
         <item itemvalue="Application.BOJ11866" />
         <item itemvalue="Application.BOJ18258" />
-        <item itemvalue="Application.BOJ4949" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +259,7 @@
       <workItem from="1711699265769" duration="2635000" />
       <workItem from="1711778434515" duration="1604000" />
       <workItem from="1711862032349" duration="61961000" />
-      <workItem from="1712742207795" duration="6349000" />
+      <workItem from="1712742207795" duration="9930000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
