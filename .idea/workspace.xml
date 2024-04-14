@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/dynamicprogramming1/BOJ10844.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/dynamicprogramming1/BOJ2193.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +258,7 @@
       <workItem from="1711699265769" duration="2635000" />
       <workItem from="1711778434515" duration="1604000" />
       <workItem from="1711862032349" duration="61961000" />
-      <workItem from="1712742207795" duration="11288000" />
+      <workItem from="1712742207795" duration="15219000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -296,5 +296,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <option name="LAST_COMMIT_MESSAGE" value="start" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/baekjoon/basicalgorithm1/dynamicprogramming1/BOJ2193.java</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
