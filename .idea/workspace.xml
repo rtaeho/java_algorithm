@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/dynamicprogramming1/BOJ14002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/dynamicprogramming1/BOJ1912.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,13 +140,13 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ14002">
-    <configuration name="BOJ11866" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.practice.stackqueuedequeue.BOJ11866" />
+  <component name="RunManager" selected="Application.BOJ1912">
+    <configuration name="BOJ14002" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.dynamicprogramming1.BOJ14002" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekjoon.practice.stackqueuedequeue.*" />
+          <option name="PATTERN" value="baekjoon.basicalgorithm1.dynamicprogramming1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,8 +154,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ14002" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.dynamicprogramming1.BOJ14002" />
+    <configuration name="BOJ1912" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.dynamicprogramming1.BOJ1912" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -208,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ1912" />
         <item itemvalue="Application.BOJ14002" />
         <item itemvalue="Application.BOJ24511" />
         <item itemvalue="Application.BOJ2346" />
         <item itemvalue="Application.BOJ28279" />
-        <item itemvalue="Application.BOJ11866" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +259,7 @@
       <workItem from="1711699265769" duration="2635000" />
       <workItem from="1711778434515" duration="1604000" />
       <workItem from="1711862032349" duration="61961000" />
-      <workItem from="1712742207795" duration="21830000" />
+      <workItem from="1712742207795" duration="27034000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
