@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ2744.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ1271.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +71,7 @@
     "Application.BOJ11656.executor": "Run",
     "Application.BOJ11720.executor": "Run",
     "Application.BOJ11866.executor": "Run",
+    "Application.BOJ1271.executor": "Run",
     "Application.BOJ1309.executor": "Run",
     "Application.BOJ13241.executor": "Run",
     "Application.BOJ1330.executor": "Run",
@@ -150,7 +151,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ2744">
+  <component name="RunManager" selected="Application.BOJ1271">
     <configuration name="BOJ10699" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.BOJ10699" />
       <module name="java_algorithm" />
@@ -164,8 +165,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ2420" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.BOJ2420" />
+    <configuration name="BOJ1271" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.BOJ1271" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -177,8 +178,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ2475" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.BOJ2475" />
+    <configuration name="BOJ2420" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.BOJ2420" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -218,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ1271" />
         <item itemvalue="Application.BOJ2744" />
         <item itemvalue="Application.BOJ4101" />
         <item itemvalue="Application.BOJ2420" />
         <item itemvalue="Application.BOJ10699" />
-        <item itemvalue="Application.BOJ2475" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +271,7 @@
       <workItem from="1711778434515" duration="1604000" />
       <workItem from="1711862032349" duration="61961000" />
       <workItem from="1712742207795" duration="50536000" />
-      <workItem from="1714132681331" duration="7200000" />
+      <workItem from="1714132681331" duration="9350000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
