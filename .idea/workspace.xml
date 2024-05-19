@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15962.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ16430.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15740.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +86,7 @@
     &quot;Application.BOJ15988.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ1620.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ16394.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ16430.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ17298.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ17299.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ1735.executor&quot;: &quot;Run&quot;,
@@ -292,7 +292,8 @@
       <workItem from="1715850819407" duration="1598000" />
       <workItem from="1715853291365" duration="184000" />
       <workItem from="1715853485312" duration="10000" />
-      <workItem from="1715853760695" duration="2720000" />
+      <workItem from="1715853760695" duration="3234000" />
+      <workItem from="1716096263054" duration="445000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
