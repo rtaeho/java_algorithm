@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start" />
+    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +80,7 @@
     &quot;Application.BOJ14002.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ1406.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ1546.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ15727.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ15733.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ15964.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ15988.executor&quot;: &quot;Run&quot;,
@@ -290,7 +293,8 @@
       <workItem from="1715853291365" duration="184000" />
       <workItem from="1715853485312" duration="10000" />
       <workItem from="1715853760695" duration="3234000" />
-      <workItem from="1716096263054" duration="1219000" />
+      <workItem from="1716096263054" duration="2606000" />
+      <workItem from="1716183047921" duration="2255000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
