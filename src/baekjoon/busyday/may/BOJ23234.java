@@ -1,0 +1,23 @@
+/*
+문제
+In many introductory computer programming classes, the first program that students learn to write just prints “Hello, world!” It is used as a first assignment because it is a simple program that produces output. The program dates back to at least 1974, when Brian Kernighan used it as an example in a C programming tutorial. Its popularity has grown since then. Louisiana Tech University's ACM chapter has a Hello World project that has collected versions of this program in almost 200 different computer languages.
+
+While “Hello, World!” is a nice and simple first program, it does have one drawback. The program says hello to the world, but the world does not respond! This one-sided conversation is starting to become awkward after more than 35 years. For this problem, write a program that returns greetings from the world to the program.
+
+입력
+There is no input for this problem.
+
+출력
+Print one line of output: The world says hello!
+
+예제 입력 1
+예제 출력 1
+The world says hello!
+ */
+package baekjoon.busyday.may;
+
+public class BOJ23234 {
+    public static void main(String[] args) {
+        System.out.println("The world says hello!");
+    }
+}

@@ -5,42 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ25372.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ23234.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ10170.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ10170.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ10699.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ10699.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ11942.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ11942.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ1271.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ1271.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ14581.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ14581.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ14645.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ14645.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ14928.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ14928.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15680.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ15680.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15727.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ15727.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15733.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ15733.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15740.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ15740.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15962.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ15962.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15963.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ15963.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ15964.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ15964.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ16170.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ16170.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ16394.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ16394.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ16430.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ16430.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ17256.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ17256.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ20492.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ20492.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ2338.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ2338.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ2420.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ2420.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ2475.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ2475.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ24900.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ24900.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ2744.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ2744.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ4101.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ4101.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ4999.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ4999.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ5337.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ5337.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ5338.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ5338.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ5339.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ5339.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ5522.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ5522.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ7287.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ7287.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ8370.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ8370.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ9653.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ9653.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/busyday/BOJ9654.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/busyday/may/BOJ9654.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -152,6 +118,7 @@
     "Application.BOJ2525.executor": "Run",
     "Application.BOJ25305.executor": "Run",
     "Application.BOJ25314.executor": "Run",
+    "Application.BOJ25372.executor": "Run",
     "Application.BOJ2588.executor": "Run",
     "Application.BOJ2609.executor": "Run",
     "Application.BOJ2734.executor": "Run",
@@ -334,7 +301,7 @@
       <workItem from="1715853760695" duration="3234000" />
       <workItem from="1716096263054" duration="2606000" />
       <workItem from="1716183047921" duration="7523000" />
-      <workItem from="1716703805999" duration="6820000" />
+      <workItem from="1716703805999" duration="9470000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
