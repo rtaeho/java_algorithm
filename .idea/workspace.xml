@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/june/BOJ20254.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/june/BOJ25311.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +101,7 @@
     "Application.BOJ1912.executor": "Run",
     "Application.BOJ1929.executor": "Run",
     "Application.BOJ1934.executor": "Run",
+    "Application.BOJ20254.executor": "Run",
     "Application.BOJ2225.executor": "Run",
     "Application.BOJ2338.executor": "Run",
     "Application.BOJ2346.executor": "Run",
@@ -302,7 +303,7 @@
       <workItem from="1715853760695" duration="3234000" />
       <workItem from="1716096263054" duration="2606000" />
       <workItem from="1716183047921" duration="7523000" />
-      <workItem from="1716703805999" duration="11249000" />
+      <workItem from="1716703805999" duration="12719000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
