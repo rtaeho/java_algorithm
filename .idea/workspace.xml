@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/june/BOJ26082.java" afterDir="false" />
-    </list>
+    <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -308,7 +306,7 @@
       <workItem from="1715853760695" duration="3234000" />
       <workItem from="1716096263054" duration="2606000" />
       <workItem from="1716183047921" duration="7523000" />
-      <workItem from="1716703805999" duration="39716000" />
+      <workItem from="1716703805999" duration="40339000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
