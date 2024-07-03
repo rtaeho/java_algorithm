@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/dp1practice/BOJ9465.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm1/dp1practice/BOJ2165.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +105,7 @@
     "Application.BOJ1934.executor": "Run",
     "Application.BOJ20254.executor": "Run",
     "Application.BOJ21300.executor": "Run",
+    "Application.BOJ2165.executor": "Run",
     "Application.BOJ2225.executor": "Run",
     "Application.BOJ2338.executor": "Run",
     "Application.BOJ2346.executor": "Run",
@@ -177,7 +178,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ24736">
+  <component name="RunManager" selected="Application.BOJ2165">
     <configuration name="BOJ15000" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.june.BOJ15000" />
       <module name="java_algorithm" />
@@ -191,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ21300" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.june.BOJ21300" />
+    <configuration name="BOJ2165" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm1.dp1practice.BOJ2165" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekjoon.busyday.june.*" />
+          <option name="PATTERN" value="baekjoon.basicalgorithm1.dp1practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -245,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ2165" />
         <item itemvalue="Application.BOJ24736" />
         <item itemvalue="Application.BOJ26711" />
         <item itemvalue="Application.BOJ24078" />
         <item itemvalue="Application.BOJ15000" />
-        <item itemvalue="Application.BOJ21300" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +312,7 @@
       <workItem from="1716096263054" duration="2606000" />
       <workItem from="1716183047921" duration="7523000" />
       <workItem from="1716703805999" duration="40339000" />
-      <workItem from="1719652097449" duration="6807000" />
+      <workItem from="1719652097449" duration="13050000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
