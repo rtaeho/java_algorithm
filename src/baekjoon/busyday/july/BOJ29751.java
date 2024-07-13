@@ -28,7 +28,7 @@ $H$인 삼각형의 넓이를 출력한다. 넓이는 항상 소수점 아래 �
 예제 출력 2
 3.0
  */
-package baekjoon.busyday;
+package baekjoon.busyday.july;
 
 import java.util.Scanner;
 
