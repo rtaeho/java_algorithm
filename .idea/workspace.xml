@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm2/bruteforce/BOJ1107.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm2/bruteforce/BOJ14500.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +313,7 @@
       <workItem from="1716096263054" duration="2606000" />
       <workItem from="1716183047921" duration="7523000" />
       <workItem from="1716703805999" duration="40339000" />
-      <workItem from="1719652097449" duration="29721000" />
+      <workItem from="1719652097449" duration="30583000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
