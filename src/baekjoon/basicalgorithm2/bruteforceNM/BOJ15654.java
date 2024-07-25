@@ -103,7 +103,7 @@ public class BOJ15654 {
     public static void dfs(int depth) {
         if (depth == m) {
             for (int i = 0; i < m; i++) {
-                sb.append(ans[i] + " ");
+                sb.append(ans[i]).append(" ");
             }
             sb.append("\n");
             return;
