@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm2/bruteforceNM/BOJ15655.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm2/bruteforceNM/BOJ15656.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baekjoon/basicalgorithm2/bruteforceNM/BOJ15654.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/basicalgorithm2/bruteforceNM/BOJ15654.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +84,7 @@
     &quot;Application.BOJ14928.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ15000.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ1546.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BOJ15655.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ15727.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ15733.executor&quot;: &quot;Run&quot;,
     &quot;Application.BOJ15963.executor&quot;: &quot;Run&quot;,
@@ -316,7 +316,8 @@
       <workItem from="1716183047921" duration="7523000" />
       <workItem from="1716703805999" duration="40339000" />
       <workItem from="1719652097449" duration="30611000" />
-      <workItem from="1721280546320" duration="9120000" />
+      <workItem from="1721280546320" duration="9833000" />
+      <workItem from="1721972810165" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
