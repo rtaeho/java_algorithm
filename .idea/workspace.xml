@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64242ca-9c2f-4b20-b4f9-f61995b734f2" name="Changes" comment="start">
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/busyday/july/BOJ27434.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +181,7 @@
       <recent name="backjoon.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BOJ15655">
+  <component name="RunManager" selected="Application.BOJ27434">
     <configuration name="BOJ1107" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.basicalgorithm2.bruteforce.BOJ1107" />
       <module name="java_algorithm" />
@@ -220,12 +221,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ24736" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.june.BOJ24736" />
+    <configuration name="BOJ27434" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.busyday.july.BOJ27434" />
       <module name="java_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekjoon.busyday.june.*" />
+          <option name="PATTERN" value="baekjoon.busyday.july.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ27434" />
         <item itemvalue="Application.BOJ15655" />
         <item itemvalue="Application.BOJ1107" />
         <item itemvalue="Application.BOJ3085" />
         <item itemvalue="Application.BOJ2165" />
-        <item itemvalue="Application.BOJ24736" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +317,7 @@
       <workItem from="1716703805999" duration="40339000" />
       <workItem from="1719652097449" duration="30611000" />
       <workItem from="1721280546320" duration="9833000" />
-      <workItem from="1721972810165" duration="4464000" />
+      <workItem from="1721972810165" duration="5940000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
