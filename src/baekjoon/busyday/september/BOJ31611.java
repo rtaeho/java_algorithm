@@ -32,6 +32,7 @@ X は整数である．
 1
 今日の 100 日後は火曜日である．したがって，1 を出力する．
  */
+
 package baekjoon.busyday.september;
 
 import java.io.BufferedReader;
