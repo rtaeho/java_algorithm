@@ -49,7 +49,7 @@ N×M크기의 배열로 표현되는 미로가 있다.
 예제 출력 4
 13
  */
-package baekjoon.basic_algorithm_2.bruteforce_graph_1;
+package baekjoon.basic_algorithm_2.graph_1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

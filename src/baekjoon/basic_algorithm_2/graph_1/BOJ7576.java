@@ -56,7 +56,7 @@
 예제 출력 5
 0
  */
-package baekjoon.basic_algorithm_2.bruteforce_graph_1;
+package baekjoon.basic_algorithm_2.graph_1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

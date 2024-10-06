@@ -28,7 +28,7 @@ K개의 줄에 걸쳐 입력으로 주어진 그래프가 이분 그래프이면
 YES
 NO
  */
-package baekjoon.basic_algorithm_2.bruteforce_graph_1;
+package baekjoon.basic_algorithm_2.graph_1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
