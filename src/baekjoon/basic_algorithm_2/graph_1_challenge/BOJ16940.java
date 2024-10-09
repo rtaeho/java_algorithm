@@ -40,81 +40,88 @@ x와 연결되어 있으면, 아직 방문하지 않은 정점 y를 모두 큐�
 package baekjoon.basic_algorithm_2.graph_1_challenge;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 public class BOJ16940 {
-    static List<Integer>[] graph; // 그래프 표현 (인접 리스트)
-    static int N; // 정점의 수
-    static int[] bfsOrder; // BFS 방문 순서
-    static boolean[] visited; // 방문 체크 배열
+    static int n; // 정점의 수
+    static int index; // BFS 순서 인덱스
+    static List<HashSet<Integer>> list; // 인접 리스트
+    static int[] visit; // 방문 여부
+    static int[] answer; // 정답 순서
+    static Queue<Integer> queue;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        N = Integer.parseInt(br.readLine());
-        graph = new ArrayList[N + 1]; // 1부터 N까지 사용하므로 N+1 크기로 생성
-        for (int i = 1; i <= N; i++) {
-            graph[i] = new ArrayList<>(); // 각 정점의 인접 리스트 초기화
+        n = Integer.parseInt(br.readLine());
+        list = new ArrayList<>();
+        visit = new int[n + 1];
+        answer = new int[n + 1];
+        queue = new LinkedList<>();
+
+        // 인덱스 값을 1 부터 씀
+        for (int i = 0; i <= n; i++) {
+            list.add(new HashSet<>());
         }
 
-        // 그래프 간선 정보 입력
-        for (int i = 0; i < N - 1; i++) {
+        // 인접 리스트 생성
+        for (int i = 0; i < n - 1; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             int u = Integer.parseInt(st.nextToken());
             int v = Integer.parseInt(st.nextToken());
-            graph[u].add(v);
-            graph[v].add(u); // 양방향 간선 추가
+
+            list.get(u).add(v);
+            list.get(v).add(u); // 양방향 간선 추가
         }
 
-        bfsOrder = new int[N]; // BFS 방문 순서 배열
+        // 정답 생성
         StringTokenizer st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < N; i++) {
-            bfsOrder[i] = Integer.parseInt(st.nextToken());
+        for (int i = 1; i <= n; i++) {
+            answer[i] = Integer.parseInt(st.nextToken());
         }
 
-        // BFS 방문 순서가 올바른지 체크
-        if (isValidBFSOrder(1)) {
-            System.out.println(1);
-        } else {
-            System.out.println(0);
+        // 시작이 1이 아니면 X
+        if (answer[1] != 1) {
+            System.out.println("0");
+            return;
         }
+
+        bfsCheck(1);
     }
 
-    // BFS 방문 순서 체크
-    private static boolean isValidBFSOrder(int start) {
-        Queue<Integer> queue = new LinkedList<>();
-        visited = new boolean[N + 1]; // 방문 체크 배열 초기화
-        queue.offer(start);
-        visited[start] = true;
+    public static void bfsCheck(int x) {
+        queue.offer(x);
+        visit[x] = 1;
+        index = 2; // 2 번째부터 탐색
 
-        int index = 0; // bfsOrder 인덱스
         while (!queue.isEmpty()) {
-            int current = queue.poll();
+            int cur = queue.poll();
 
-            // 현재 정점이 BFS 순서에서 다음 정점과 일치하지 않으면 잘못된 순서
-            if (current != bfsOrder[index++]) {
-                return false;
-            }
-
-            // 연결된 정점들을 확인
-            List<Integer> neighbors = graph[current];
-            List<Integer> unvisitedNeighbors = new ArrayList<>();
-
-            for (int neighbor : neighbors) {
-                if (!visited[neighbor]) {
-                    unvisitedNeighbors.add(neighbor);
+            // 현재 노드의 자식들 방문 처리
+            int count = 0;
+            for (int next : list.get(cur)) {
+                if (visit[next] == 0) {
+                    visit[next] = 1;
+                    count++;
                 }
             }
 
-            // 아직 방문하지 않은 인접 정점들을 큐에 추가
-            for (int i = 0; i < unvisitedNeighbors.size(); i++) {
-                queue.offer(unvisitedNeighbors.get(i));
-                visited[unvisitedNeighbors.get(i)] = true; // 방문 처리
+            for (int i = index; i < index + count; i++) {
+                // 정답이 현재 노드의 자식이 아니라면 X
+                if (i >= answer.length || visit[answer[i]] == 0) {
+                    System.out.println("0");
+                    return;
+                }
+                // 정답이 현재 노드의 자식이면 큐에 순서대로 삽입
+                else {
+                    queue.offer(answer[i]);
+                }
             }
+            index += count;
         }
 
-        return true; // 모든 정점을 올바른 순서로 방문한 경우
+        System.out.println("1");
     }
 }
