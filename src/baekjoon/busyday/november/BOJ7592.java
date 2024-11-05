@@ -40,7 +40,7 @@ Output consists of triangles of the appropriate sizes. Each triangle is wider at
 ******
 *******
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

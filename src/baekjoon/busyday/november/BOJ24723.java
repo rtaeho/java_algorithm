@@ -59,7 +59,7 @@ $4$가지다.
 노트
 살면서 녹색거탑을 만난다면, 탑을 정복하고 DEVIEW에 참여해 코딩괴물이 되어보자.
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

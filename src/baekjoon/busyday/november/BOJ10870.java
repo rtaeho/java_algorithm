@@ -21,7 +21,7 @@ n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작
 예제 출력 1
 55
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

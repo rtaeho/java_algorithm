@@ -27,7 +27,7 @@ N은 정수이다.
 예제 출력 3
 20
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;
