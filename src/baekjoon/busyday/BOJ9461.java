@@ -60,6 +60,7 @@ public class BOJ9461 {
         for (int n : testCases) {
             sb.append(dp[n]).append("\n");
         }
+
         System.out.print(sb);
     }
 }
