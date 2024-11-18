@@ -39,7 +39,7 @@ public class BOJ9461 {
             testCases[i] = Integer.parseInt(br.readLine());
             maxN = Math.max(maxN, testCases[i]);
         }
- 
+
         // DP 배열 초기화
         long[] dp = new long[maxN + 1];
         dp[1] = 1;
