@@ -57,5 +57,5 @@ public class BOJ11659 {
             bw.write((prefixSum[j] - prefixSum[i - 1]) + "\n");
         }
         bw.flush();
-    }
+    } 
 }
