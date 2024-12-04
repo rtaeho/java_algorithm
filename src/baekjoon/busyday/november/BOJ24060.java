@@ -54,7 +54,7 @@ merge(A[], p, q, r) {
 -1
 저장 횟수 12가 K 보다 작으므로 -1을 출력한다.
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

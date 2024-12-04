@@ -57,7 +57,7 @@ a 7 10
 2
 1
  */
-package baekjoon.busyday;
+package baekjoon.busyday.december;
 
 import java.io.*;
 import java.util.*;
@@ -81,7 +81,7 @@ public class BOJ16139 {
             }
             prefixSum[charIndex][i + 1]++; // 해당 알파벳 카운트 증가
         }
- 
+
         // 쿼리 처리
         int q = Integer.parseInt(br.readLine());
         for (int i = 0; i < q; i++) {

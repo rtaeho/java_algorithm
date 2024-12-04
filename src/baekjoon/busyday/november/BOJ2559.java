@@ -37,7 +37,7 @@
 예제 출력 2
 31
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.*;
 import java.util.StringTokenizer;

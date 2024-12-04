@@ -30,7 +30,7 @@
 2 3
 1 3
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.IOException;
 

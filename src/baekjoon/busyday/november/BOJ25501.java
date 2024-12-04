@@ -57,7 +57,7 @@ PALINDROME
 0 2
 0 1
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

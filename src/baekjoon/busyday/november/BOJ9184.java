@@ -41,7 +41,7 @@ w(10, 4, 6) = 523
 w(50, 50, 50) = 1048576
 w(-1, 7, 18) = 1
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

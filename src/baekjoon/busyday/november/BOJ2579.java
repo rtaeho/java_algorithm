@@ -40,7 +40,7 @@
 예제 출력 1
 75
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

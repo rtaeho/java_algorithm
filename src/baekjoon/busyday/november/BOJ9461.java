@@ -20,7 +20,7 @@ N이 주어졌을 때, P(N)을 구하는 프로그램을 작성하시오.
 3
 16
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -23,7 +23,7 @@
 9
 1
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.*;
 import java.util.StringTokenizer;

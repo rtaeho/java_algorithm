@@ -29,7 +29,7 @@
 예제 출력 1
 3
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

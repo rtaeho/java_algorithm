@@ -46,7 +46,7 @@ N이 3보다 클 경우, 크기 N의 패턴은 공백으로 채워진 가운데�
 * ** ** ** ** ** ** ** ** *
 ***************************
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;

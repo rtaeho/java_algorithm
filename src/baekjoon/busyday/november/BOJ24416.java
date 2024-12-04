@@ -34,7 +34,7 @@ fibonacci(n) {
 예제 출력 2
 832040 28
  */
-package baekjoon.busyday;
+package baekjoon.busyday.november;
 
 import java.io.BufferedReader;
 import java.io.IOException;
