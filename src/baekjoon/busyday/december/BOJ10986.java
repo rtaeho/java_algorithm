@@ -43,7 +43,7 @@ public class BOJ10986 {
             }
             modCount[(int) prefixSum[i]]++;
         }
-
+ 
         // 나머지가 같은 경우의 수 계산
         for (int i = 0; i < M; i++) {
             if (modCount[i] > 1) {
