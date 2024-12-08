@@ -85,7 +85,7 @@ public class BOJ25682 {
         // 누적합 배열 생성
         int[][] pattern1 = new int[N + 1][M + 1]; // 'W'로 시작하는 체스판과의 차이
         int[][] pattern2 = new int[N + 1][M + 1]; // 'B'로 시작하는 체스판과의 차이
-
+ 
         // 누적합 테이블 작성
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
