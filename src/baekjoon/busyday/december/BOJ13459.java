@@ -203,6 +203,7 @@ public class BOJ13459 {
                 break;
             }
 
+
             x = nx;
             y = ny;
             dist++;
