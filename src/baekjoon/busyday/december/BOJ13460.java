@@ -101,13 +101,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+
 public class BOJ13460 {
     static int N, M;
     static char[][] board;
     static boolean[][][][] visited; // R과 B의 위치를 저장하는 방문 체크 배열
     static int[] dx = {-1, 1, 0, 0}; // 상, 하, 좌, 우
     static int[] dy = {0, 0, -1, 1}; // 상, 하, 좌, 우
-    
+
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
