@@ -74,7 +74,7 @@ public class BOJ11047 {
                 goal %= coins[i];
             }
         }
-
+ 
         return count;
     }
 }
