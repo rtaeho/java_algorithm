@@ -38,6 +38,7 @@ public class BOJ16948 {
             {-2, -1}, {-2, 1}, {0, -2}, {0, 2}, {2, -1}, {2, 1}
     };
 
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
