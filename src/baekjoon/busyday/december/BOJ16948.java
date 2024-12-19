@@ -87,6 +87,7 @@ public class BOJ16948 {
         return -1;
     }
 
+
     // 체스판 범위 확인
     static boolean isInBounds(int x, int y) {
         return x >= 0 && x < N && y >= 0 && y < N;
