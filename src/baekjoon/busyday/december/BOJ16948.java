@@ -86,8 +86,6 @@ public class BOJ16948 {
         // 목표 위치에 도달할 수 없는 경우
         return -1;
     }
-
-
     // 체스판 범위 확인
     static boolean isInBounds(int x, int y) {
         return x >= 0 && x < N && y >= 0 && y < N;
