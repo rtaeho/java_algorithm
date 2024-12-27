@@ -43,7 +43,8 @@ public class BOJ1037 {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
 
-        
+
+
 
         // 진짜 약수 배열 생성
         int[] divisors = new int[count];
