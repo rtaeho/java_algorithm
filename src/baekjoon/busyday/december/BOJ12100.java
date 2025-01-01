@@ -46,5 +46,4 @@ package baekjoon.busyday.december;
 
 public class BOJ12100 {
 
-
 }
