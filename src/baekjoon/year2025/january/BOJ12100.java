@@ -131,6 +131,7 @@ public class BOJ12100 {
                             newBoard[x][j] = 0;
                             x++;
                         }
+
                         if (x < N - 1 && newBoard[x + 1][j] == newBoard[x][j] && !merged[x + 1][j]) {
                             newBoard[x + 1][j] *= 2;
                             newBoard[x][j] = 0;
