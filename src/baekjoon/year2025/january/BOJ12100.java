@@ -174,8 +174,6 @@ public class BOJ12100 {
                             merged[i][y + 1] = true;
                         }
                     }
-
-
                 }
             }
         }
