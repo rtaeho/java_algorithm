@@ -176,7 +176,6 @@ public class BOJ12100 {
                     }
                 }
             }
-
         }
         return newBoard;
     }
