@@ -66,8 +66,75 @@
  */
 package baekjoon.year2025.january;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
 public class BOJ16928 {
-    public static void main(String[] args) {
-        
+    static int[] board = new int[101];
+    static boolean[] visited = new boolean[101];
+    static int N, M;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+
+        for (int i = 1; i <= 100; i++) {
+            board[i] = i;
+        }
+
+        for (int i = 0; i < N; i++) {
+            st = new StringTokenizer(br.readLine());
+            int from = Integer.parseInt(st.nextToken());
+            int to = Integer.parseInt(st.nextToken());
+            board[from] = to;
+        }
+
+        for (int i = 0; i < M; i++) {
+            st = new StringTokenizer(br.readLine());
+            int from = Integer.parseInt(st.nextToken());
+            int to = Integer.parseInt(st.nextToken());
+            board[from] = to;
+        }
+
+        System.out.println(bfs());
+    }
+
+    static int bfs() {
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{1, 0});
+        visited[1] = true;
+
+        while (!queue.isEmpty()) {
+            int[] current = queue.poll();
+            int position = current[0];
+            int moves = current[1];
+
+            if (position == 100) {
+                return moves;
+            }
+
+            for (int dice = 1; dice <= 6; dice++) {
+                int nextPos = position + dice;
+
+                if (nextPos > 100) {
+                    continue;
+                }
+
+                nextPos = board[nextPos];
+                if (!visited[nextPos]) {
+                    visited[nextPos] = true;
+                    queue.add(new int[]{nextPos, moves + 1});
+                }
+            }
+        }
+
+        return -1;
     }
 }
