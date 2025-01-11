@@ -123,6 +123,6 @@ public class BOJ9019 {
                 queue.add(new Node(next, current.commands + "R"));
             }
         }
-        return ""; // 도달 불가능한 경우 (문제에서 항상 가능하다고 가정)
+        return "";
     }
 }
