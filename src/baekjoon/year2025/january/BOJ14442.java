@@ -45,5 +45,72 @@ N×M의 행렬로 표현되는 맵이 있다. 맵에서 0은 이동할 수 있�
  */
 package baekjoon.year2025.january;
 
+import java.io.*;
+import java.util.*;
+
 public class BOJ14442 {
+    static int N, M, K;
+    static int[][] map;
+    static boolean[][][] visited;
+    static int[] dx = {-1, 1, 0, 0}; // 상, 하, 좌, 우
+    static int[] dy = {0, 0, -1, 1};
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        K = Integer.parseInt(st.nextToken());
+
+        map = new int[N][M];
+        visited = new boolean[N][M][K + 1]; // 벽 부수기 횟수를 포함한 방문 배열
+
+        for (int i = 0; i < N; i++) {
+            String line = br.readLine();
+            for (int j = 0; j < M; j++) {
+                map[i][j] = line.charAt(j) - '0';
+            }
+        }
+
+        System.out.println(bfs());
+    }
+
+    static int bfs() {
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{0, 0, 0, 1}); // {x, y, 벽 부순 횟수, 거리}
+        visited[0][0][0] = true;
+
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int x = cur[0], y = cur[1], broken = cur[2], dist = cur[3];
+
+            // 목표 지점 도달
+            if (x == N - 1 && y == M - 1) {
+                return dist;
+            }
+
+            for (int d = 0; d < 4; d++) {
+                int nx = x + dx[d];
+                int ny = y + dy[d];
+
+                // 맵의 범위 확인
+                if (nx >= 0 && ny >= 0 && nx < N && ny < M) {
+                    // 빈 칸으로 이동
+                    if (map[nx][ny] == 0 && !visited[nx][ny][broken]) {
+                        visited[nx][ny][broken] = true;
+                        queue.add(new int[]{nx, ny, broken, dist + 1});
+                    }
+
+                    // 벽을 부수고 이동
+                    if (map[nx][ny] == 1 && broken < K && !visited[nx][ny][broken + 1]) {
+                        visited[nx][ny][broken + 1] = true;
+                        queue.add(new int[]{nx, ny, broken + 1, dist + 1});
+                    }
+                }
+            }
+        }
+
+        return -1; // 도달 불가능
+    }
 }
