@@ -50,5 +50,4 @@ N×M의 행렬로 표현되는 맵이 있다. 맵에서 0은 이동할 수 있�
 package baekjoon.year2025.january;
 
 public class BOJ16933 {
-
 }
