@@ -51,5 +51,4 @@ package baekjoon.year2025.january;
 
 public class BOJ16933 {
 
-
 }
