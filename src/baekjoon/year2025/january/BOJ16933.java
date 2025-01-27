@@ -49,77 +49,101 @@ N×M의 행렬로 표현되는 맵이 있다. 맵에서 0은 이동할 수 있�
  */
 package baekjoon.year2025.january;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+class Node {
+    int x, y, dist, boom, day;
+
+    Node(int x, int y, int dist, int boom, int day) {
+        this.x = x;
+        this.y = y;
+        this.dist = dist;
+        this.boom = boom;
+        this.day = day;
+    }
+}
 
 public class BOJ16933 {
-    static int N, M, K;
-    static int[][] map;
-    static boolean[][][][] visited; // 방문 배열
-    static int[] dx = {-1, 1, 0, 0}; // 상하좌우
-    static int[] dy = {0, 0, -1, 1};
+
+    static final int dx[] = {0, 0, 1, -1};
+    static final int dy[] = {1, -1, 0, 0};
+    static int map[][];
+    static boolean visit[][][][];
+    static int n, m, k, ans;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        N = Integer.parseInt(st.nextToken());
-        M = Integer.parseInt(st.nextToken());
-        K = Integer.parseInt(st.nextToken());
+        n = Integer.parseInt(st.nextToken());
+        m = Integer.parseInt(st.nextToken());
+        k = Integer.parseInt(st.nextToken());
+        map = new int[n][m];
+        visit = new boolean[n][m][k + 1][2];
 
-        map = new int[N][M];
-        visited = new boolean[N][M][K + 1][2]; // 낮(1)과 밤(0) 상태를 구분
-
-        for (int i = 0; i < N; i++) {
-            String line = br.readLine();
-            for (int j = 0; j < M; j++) {
-                map[i][j] = line.charAt(j) - '0';
+        for (int i = 0; i < n; i++) {
+            String s = br.readLine();
+            for (int j = 0; j < m; j++) {
+                map[i][j] = s.charAt(j) - '0';
             }
         }
+        ans = -1;
+        bfs();
 
-        System.out.println(bfs());
+        System.out.println(ans);
+
     }
 
-    static int bfs() {
-        Queue<int[]> queue = new LinkedList<>();
-        queue.add(new int[]{0, 0, 0, 1, 1}); // {x, y, 부순 벽 횟수, 낮/밤(1/0), 거리}
-        visited[0][0][0][1] = true;
+    static void bfs() {
+        Queue<Node> q = new LinkedList<>();
+        q.add(new Node(0, 0, 1, 0, 0)); //x, y, dist, boom, day
+        visit[0][0][0][0] = true;
 
-        while (!queue.isEmpty()) {
-            int[] cur = queue.poll();
-            int x = cur[0], y = cur[1], broken = cur[2], day = cur[3], dist = cur[4];
+        while (!q.isEmpty()) {
+            Node now = q.poll();
+            int x = now.x;
+            int y = now.y;
 
-            // 목표 지점 도달
-            if (x == N - 1 && y == M - 1) {
-                return dist;
+            if (x == n - 1 && y == m - 1) {
+                ans = now.dist;
+                return;
             }
 
-            // 상하좌우 이동
-            for (int d = 0; d < 4; d++) {
-                int nx = x + dx[d];
-                int ny = y + dy[d];
+            for (int i = 0; i < 4; i++) {
+                int nx = x + dx[i];
+                int ny = y + dy[i];
 
-                if (nx >= 0 && ny >= 0 && nx < N && ny < M) {
-                    if (map[nx][ny] == 0 && !visited[nx][ny][broken][1 - day]) { // 빈 칸
-                        visited[nx][ny][broken][1 - day] = true;
-                        queue.add(new int[]{nx, ny, broken, 1 - day, dist + 1});
+                if (0 > nx || nx >= n || 0 > ny || ny >= m) {
+                    continue;
+                }
+
+                if (map[nx][ny] == 0) {
+                    if (now.day == 0 && !visit[nx][ny][now.boom][now.day + 1]) {
+                        q.add(new Node(nx, ny, now.dist + 1, now.boom, now.day + 1));
+                        visit[nx][ny][now.boom][now.day + 1] = true;
+                    } else if (now.day == 1 && !visit[nx][ny][now.boom][now.day - 1]) {
+                        q.add(new Node(nx, ny, now.dist + 1, now.boom, now.day - 1));
+                        visit[nx][ny][now.boom][now.day - 1] = true;
                     }
-
-                    if (day == 1 && map[nx][ny] == 1 && broken < K && !visited[nx][ny][broken + 1][1
-                            - day]) { // 낮에 벽 부수기
-                        visited[nx][ny][broken + 1][1 - day] = true;
-                        queue.add(new int[]{nx, ny, broken + 1, 1 - day, dist + 1});
+                } else { //낮은 0 밤은 1
+                    if (now.boom < k && now.day == 0 && !visit[nx][ny][now.boom + 1][now.day + 1]) {
+                        visit[nx][ny][now.boom + 1][now.day + 1] = true;
+                        q.add(new Node(nx, ny, now.dist + 1, now.boom + 1, now.day + 1));
+                    } else if (now.boom < k && now.day == 1 && !visit[x][y][now.boom][now.day - 1]) {
+                        visit[x][y][now.boom][now.day - 1] = true;
+                        q.add(new Node(x, y, now.dist + 1, now.boom, now.day - 1));
                     }
                 }
+
             }
 
-            // 같은 위치에서 낮/밤 바꾸기
-            if (!visited[x][y][broken][1 - day]) {
-                visited[x][y][broken][1 - day] = true;
-                queue.add(new int[]{x, y, broken, 1 - day, dist + 1});
-            }
         }
 
-        return -1; // 도달 불가능
     }
+
 }
