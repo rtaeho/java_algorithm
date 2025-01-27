@@ -49,7 +49,77 @@ N×M의 행렬로 표현되는 맵이 있다. 맵에서 0은 이동할 수 있�
  */
 package baekjoon.year2025.january;
 
+import java.io.*;
+import java.util.*;
+
 public class BOJ16933 {
+    static int N, M, K;
+    static int[][] map;
+    static boolean[][][][] visited; // 방문 배열
+    static int[] dx = {-1, 1, 0, 0}; // 상하좌우
+    static int[] dy = {0, 0, -1, 1};
 
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        K = Integer.parseInt(st.nextToken());
+
+        map = new int[N][M];
+        visited = new boolean[N][M][K + 1][2]; // 낮(1)과 밤(0) 상태를 구분
+
+        for (int i = 0; i < N; i++) {
+            String line = br.readLine();
+            for (int j = 0; j < M; j++) {
+                map[i][j] = line.charAt(j) - '0';
+            }
+        }
+
+        System.out.println(bfs());
+    }
+
+    static int bfs() {
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{0, 0, 0, 1, 1}); // {x, y, 부순 벽 횟수, 낮/밤(1/0), 거리}
+        visited[0][0][0][1] = true;
+
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int x = cur[0], y = cur[1], broken = cur[2], day = cur[3], dist = cur[4];
+
+            // 목표 지점 도달
+            if (x == N - 1 && y == M - 1) {
+                return dist;
+            }
+
+            // 상하좌우 이동
+            for (int d = 0; d < 4; d++) {
+                int nx = x + dx[d];
+                int ny = y + dy[d];
+
+                if (nx >= 0 && ny >= 0 && nx < N && ny < M) {
+                    if (map[nx][ny] == 0 && !visited[nx][ny][broken][1 - day]) { // 빈 칸
+                        visited[nx][ny][broken][1 - day] = true;
+                        queue.add(new int[]{nx, ny, broken, 1 - day, dist + 1});
+                    }
+
+                    if (day == 1 && map[nx][ny] == 1 && broken < K && !visited[nx][ny][broken + 1][1
+                            - day]) { // 낮에 벽 부수기
+                        visited[nx][ny][broken + 1][1 - day] = true;
+                        queue.add(new int[]{nx, ny, broken + 1, 1 - day, dist + 1});
+                    }
+                }
+            }
+
+            // 같은 위치에서 낮/밤 바꾸기
+            if (!visited[x][y][broken][1 - day]) {
+                visited[x][y][broken][1 - day] = true;
+                queue.add(new int[]{x, y, broken, 1 - day, dist + 1});
+            }
+        }
+
+        return -1; // 도달 불가능
+    }
 }
