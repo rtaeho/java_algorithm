@@ -94,7 +94,6 @@ public class BOJ16933 {
         }
         ans = -1;
         bfs();
-
         System.out.println(ans);
     }
 
