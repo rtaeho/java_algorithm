@@ -40,5 +40,6 @@ package baekjoon.year2025.january;
 public class BOJ16946 {
     public static void main(String[] args) {
 
+
     }
 }
