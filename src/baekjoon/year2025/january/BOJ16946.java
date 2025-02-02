@@ -37,9 +37,103 @@ N×M의 행렬로 표현되는 맵이 있다. 맵에서 0은 이동할 수 있�
  */
 package baekjoon.year2025.january;
 
+import java.io.*;
+import java.util.*;
+
 public class BOJ16946 {
-    public static void main(String[] args) {
+    static int N, M;
+    static int[][] map, group;
+    static boolean[][] visited;
+    static int[] dx = {1, -1, 0, 0};
+    static int[] dy = {0, 0, 1, -1};
+    static Map<Integer, Integer> areaSize = new HashMap<>();
+    static int groupId = 2; // 0,1은 이미 사용된 값이므로 2부터 시작
 
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+
+        map = new int[N][M];
+        group = new int[N][M];
+        visited = new boolean[N][M];
+
+        for (int i = 0; i < N; i++) {
+            String line = br.readLine();
+            for (int j = 0; j < M; j++) {
+                map[i][j] = line.charAt(j) - '0';
+            }
+        }
+
+        // 1️⃣ 각 영역을 탐색하여 그룹화 & 크기 저장
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                if (map[i][j] == 0 && !visited[i][j]) {
+                    bfs(i, j, groupId++);
+                }
+            }
+        }
+
+        // 2️⃣ 벽을 부쉈을 때 이동할 수 있는 칸 계산
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                if (map[i][j] == 1) {
+                    sb.append(getNewAreaSize(i, j) % 10);
+                } else {
+                    sb.append("0");
+                }
+            }
+            sb.append("\n");
+        }
+
+        System.out.print(sb);
+    }
+
+    // BFS를 사용하여 하나의 영역을 탐색하고 크기 저장
+    static void bfs(int x, int y, int id) {
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{x, y});
+        visited[x][y] = true;
+        group[x][y] = id;
+
+        int count = 1;
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int cx = cur[0], cy = cur[1];
+
+            for (int d = 0; d < 4; d++) {
+                int nx = cx + dx[d], ny = cy + dy[d];
+                if (nx >= 0 && ny >= 0 && nx < N && ny < M) {
+                    if (!visited[nx][ny] && map[nx][ny] == 0) {
+                        queue.add(new int[]{nx, ny});
+                        visited[nx][ny] = true;
+                        group[nx][ny] = id;
+                        count++;
+                    }
+                }
+            }
+        }
+        // 영역 ID별 크기 저장
+        areaSize.put(id, count);
+    }
+
+    // 벽을 부쉈을 때 이동 가능한 칸 계산
+    static int getNewAreaSize(int x, int y) {
+        Set<Integer> uniqueGroups = new HashSet<>();
+        int newSize = 1; // 현재 벽을 포함한 크기
+
+        for (int d = 0; d < 4; d++) {
+            int nx = x + dx[d], ny = y + dy[d];
+            if (nx >= 0 && ny >= 0 && nx < N && ny < M) {
+                int gId = group[nx][ny];
+                if (gId > 1 && uniqueGroups.add(gId)) { // 중복 방지
+                    newSize += areaSize.get(gId);
+                }
+            }
+        }
+        return newSize;
     }
 }
