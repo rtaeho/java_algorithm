@@ -92,6 +92,7 @@ public class BOJ16946 {
         System.out.print(sb);
     }
 
+    
     // BFS를 사용하여 하나의 영역을 탐색하고 크기 저장
     static void bfs(int x, int y, int id) {
         Queue<int[]> queue = new LinkedList<>();
