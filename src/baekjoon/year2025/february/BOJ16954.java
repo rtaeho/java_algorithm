@@ -91,6 +91,7 @@ public class BOJ16954 {
         System.out.println(bfs() ? 1 : 0);
     }
 
+
     static boolean bfs() {
         Queue<int[]> queue = new LinkedList<>();
 
