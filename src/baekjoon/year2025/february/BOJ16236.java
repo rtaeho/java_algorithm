@@ -87,8 +87,118 @@ N×N 크기의 공간에 물고기 M마리와 아기 상어 1마리가 있다. �
  */
 package baekjoon.year2025.february;
 
-public class BOJ16236 {
-    public static void main(String[] args) {
+import java.io.*;
+import java.util.*;
 
+public class BOJ16236 {
+    static class Shark {
+        int x, y, size, eatCount;
+
+        public Shark(int x, int y) {
+            this.x = x;
+            this.y = y;
+            this.size = 2;
+            this.eatCount = 0;
+        }
+    }
+
+    static int N;
+    static int[][] map;
+    static Shark shark;
+    static int[] dx = {-1, 1, 0, 0}; // 상, 하, 좌, 우
+    static int[] dy = {0, 0, -1, 1};
+    static int totalTime = 0;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
+
+        N = Integer.parseInt(br.readLine());
+        map = new int[N][N];
+
+        // 입력받기 및 아기 상어 위치 찾기
+        for (int i = 0; i < N; i++) {
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < N; j++) {
+                map[i][j] = Integer.parseInt(st.nextToken());
+                if (map[i][j] == 9) {
+                    shark = new Shark(i, j);
+                    map[i][j] = 0; // 아기 상어 위치를 빈 칸(0)으로 설정
+                }
+            }
+        }
+
+        // BFS를 통해 물고기 탐색 및 이동
+        while (true) {
+            int time = bfs();
+            if (time == -1) break; // 더 이상 먹을 수 있는 물고기가 없으면 종료
+            totalTime += time;
+        }
+
+        System.out.println(totalTime);
+    }
+
+    // BFS 탐색
+    static int bfs() {
+        Queue<int[]> queue = new LinkedList<>();
+        boolean[][] visited = new boolean[N][N];
+        queue.add(new int[]{shark.x, shark.y, 0}); // (x, y, 이동시간)
+        visited[shark.x][shark.y] = true;
+
+        int minDist = Integer.MAX_VALUE;
+        int targetX = -1, targetY = -1, moveTime = -1;
+
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int x = cur[0], y = cur[1], dist = cur[2];
+
+            // 더 먼 거리로 가는 경우 중단
+            if (dist > minDist) break;
+
+            for (int d = 0; d < 4; d++) {
+                int nx = x + dx[d];
+                int ny = y + dy[d];
+
+                if (nx < 0 || ny < 0 || nx >= N || ny >= N) continue; // 범위 초과
+                if (visited[nx][ny] || map[nx][ny] > shark.size) continue; // 방문했거나 상어보다 큰 물고기
+
+                visited[nx][ny] = true;
+                queue.add(new int[]{nx, ny, dist + 1});
+
+                // 먹을 수 있는 물고기 찾음
+                if (map[nx][ny] > 0 && map[nx][ny] < shark.size) {
+                    if (dist + 1 < minDist) {
+                        // 더 가까운 물고기를 찾으면 갱신
+                        minDist = dist + 1;
+                        targetX = nx;
+                        targetY = ny;
+                        moveTime = minDist;
+                    } else if (dist + 1 == minDist) {
+                        // 거리가 같다면 위쪽 우선, 왼쪽 우선
+                        if (nx < targetX || (nx == targetX && ny < targetY)) {
+                            targetX = nx;
+                            targetY = ny;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 먹을 물고기가 없으면 종료
+        if (targetX == -1) return -1;
+
+        // 물고기 먹기
+        map[targetX][targetY] = 0;
+        shark.x = targetX;
+        shark.y = targetY;
+        shark.eatCount++;
+
+        // 크기 증가
+        if (shark.eatCount == shark.size) {
+            shark.size++;
+            shark.eatCount = 0;
+        }
+
+        return moveTime; // 이동 시간 반환
     }
 }
