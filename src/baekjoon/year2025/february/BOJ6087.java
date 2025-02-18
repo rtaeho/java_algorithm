@@ -197,7 +197,6 @@ public class BOJ6087 {
                     pq.add(new Node(x, y, newDir, mirrors + 1));
                 }
             }
-            
         }
         return -1; // 도달할 수 없는 경우 (문제 조건상 발생하지 않음)
     }
