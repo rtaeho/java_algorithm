@@ -182,7 +182,6 @@ public class BOJ6087 {
                     pq.add(new Node(nx, ny, dir, mirrors));
                 }
             }
-
             // 거울을 설치하여 90도 회전 (우 → 상, 하 / 좌 → 상, 하)
             for (int newDir = 0; newDir < 4; newDir++) {
                 if (dir == newDir) {
