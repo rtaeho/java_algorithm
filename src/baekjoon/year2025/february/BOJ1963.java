@@ -28,5 +28,86 @@
  */
 package baekjoon.year2025.february;
 
+import java.io.*;
+import java.util.*;
+
 public class BOJ1963 {
+    static boolean[] isPrime;
+    static int T;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+
+        // 소수 판별 배열 초기화
+        sieveOfEratosthenes();
+
+        T = Integer.parseInt(br.readLine()); // 테스트 케이스 개수
+        while (T-- > 0) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            int start = Integer.parseInt(st.nextToken());
+            int target = Integer.parseInt(st.nextToken());
+
+            // BFS 실행
+            int result = bfs(start, target);
+            sb.append(result == -1 ? "Impossible" : result).append("\n");
+        }
+
+        System.out.println(sb);
+    }
+
+    // **에라토스테네스의 체**를 사용하여 4자리 소수 판별
+    static void sieveOfEratosthenes() {
+        isPrime = new boolean[10000];
+        Arrays.fill(isPrime, true);
+        isPrime[0] = isPrime[1] = false; // 0과 1은 소수가 아님
+
+        for (int i = 2; i * i < 10000; i++) {
+            if (isPrime[i]) {
+                for (int j = i * i; j < 10000; j += i) {
+                    isPrime[j] = false;
+                }
+            }
+        }
+    }
+
+    // **BFS**를 사용하여 최단 변경 횟수 찾기
+    static int bfs(int start, int target) {
+        if (start == target) return 0; // 같은 숫자일 경우 0 반환
+
+        Queue<int[]> queue = new LinkedList<>();
+        boolean[] visited = new boolean[10000];
+
+        queue.add(new int[]{start, 0}); // {현재 숫자, 변경 횟수}
+        visited[start] = true;
+
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int num = cur[0];
+            int count = cur[1];
+
+            // 각 자리수를 변경하여 새로운 숫자 생성
+            for (int i = 0; i < 4; i++) {
+                char[] numArr = String.valueOf(num).toCharArray();
+
+                // 0~9까지 바꿔보기
+                for (char digit = '0'; digit <= '9'; digit++) {
+                    if (numArr[i] == digit) continue; // 같은 숫자는 패스
+
+                    numArr[i] = digit;
+                    int newNum = Integer.parseInt(new String(numArr));
+
+                    // 4자리 숫자 & 소수 & 방문 X
+                    if (newNum >= 1000 && isPrime[newNum] && !visited[newNum]) {
+                        if (newNum == target) return count + 1; // 목표 도달
+
+                        queue.add(new int[]{newNum, count + 1});
+                        visited[newNum] = true;
+                    }
+                }
+            }
+        }
+
+        return -1; // 변환 불가능
+    }
 }
