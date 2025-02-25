@@ -35,6 +35,88 @@ RRRRR
  */
 package baekjoon.year2025.february;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import java.util.*;
+
 public class BOJ10026 {
-    
+    static int N;
+    static char[][] grid;
+    static boolean[][] visited;
+    static int[] dx = {-1, 1, 0, 0}; // 상, 하, 좌, 우
+    static int[] dy = {0, 0, -1, 1};
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        N = Integer.parseInt(br.readLine());
+        grid = new char[N][N];
+
+        // 입력 받기
+        for (int i = 0; i < N; i++) {
+            grid[i] = br.readLine().toCharArray();
+        }
+
+        // 적록색약이 아닌 사람의 구역 수 계산
+        visited = new boolean[N][N];
+        int normalCount = 0;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (!visited[i][j]) {
+                    bfs(i, j, grid[i][j], false);
+                    normalCount++;
+                }
+            }
+        }
+
+        // 적록색약인 사람의 구역 수 계산
+        visited = new boolean[N][N]; // 방문 배열 초기화
+        int colorBlindCount = 0;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (!visited[i][j]) {
+                    bfs(i, j, grid[i][j], true);
+                    colorBlindCount++;
+                }
+            }
+        }
+
+        // 결과 출력
+        System.out.println(normalCount + " " + colorBlindCount);
+    }
+
+    // BFS 탐색
+    static void bfs(int x, int y, char color, boolean isColorBlind) {
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{x, y});
+        visited[x][y] = true;
+
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int cx = cur[0];
+            int cy = cur[1];
+
+            for (int d = 0; d < 4; d++) {
+                int nx = cx + dx[d];
+                int ny = cy + dy[d];
+
+                if (nx >= 0 && ny >= 0 && nx < N && ny < N && !visited[nx][ny]) {
+                    if (isSameColor(grid[nx][ny], color, isColorBlind)) {
+                        visited[nx][ny] = true;
+                        queue.add(new int[]{nx, ny});
+                    }
+                }
+            }
+        }
+    }
+
+    // 같은 색상인지 확인
+    static boolean isSameColor(char a, char b, boolean isColorBlind) {
+        if (isColorBlind) {
+            return (a == 'R' || a == 'G') && (b == 'R' || b == 'G') || a == b;
+        } else {
+            return a == b;
+        }
+    }
 }
