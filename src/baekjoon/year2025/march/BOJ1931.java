@@ -52,6 +52,7 @@ public class BOJ1931 {
             }
         }
 
+        
         System.out.println(count);
     }
 }
