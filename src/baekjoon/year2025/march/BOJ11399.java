@@ -32,7 +32,6 @@ public class BOJ11399 {
         // 사람의 수 N 입력
         int N = Integer.parseInt(br.readLine());
 
-
         // 인출 시간 P 배열 입력
         int[] P = new int[N];
         StringTokenizer st = new StringTokenizer(br.readLine());
