@@ -133,7 +133,6 @@ public class BOJ1080 {
                 }
             }
         }
-        
         return isEqual() ? count : -1;
     }
     
