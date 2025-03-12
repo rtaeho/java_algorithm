@@ -144,7 +144,6 @@ public class BOJ1080 {
             }
         }
     }
-    
     // 행렬 A와 B가 같은지 확인하는 메서드
     static boolean isEqual() {
         for(int i = 0; i < N; i++) {
