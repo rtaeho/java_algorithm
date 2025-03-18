@@ -81,7 +81,6 @@ public class BOJ1285 {
             // 현재 열에서 T가 많은 경우, H로 뒤집는 것이 유리함
             totalTails += Math.min(tails, N - tails);
         }
-
         return totalTails;
     }
 }
