@@ -35,7 +35,6 @@ import java.io.*;
 public class BOJ1285 {
     static int N;
     static char[][] coins;
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
