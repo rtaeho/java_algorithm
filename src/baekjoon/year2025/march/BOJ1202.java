@@ -102,7 +102,6 @@ public class BOJ1202 {
                 maxProfit += pq.poll();
             }
         }
-
         System.out.println(maxProfit);
     }
 }
