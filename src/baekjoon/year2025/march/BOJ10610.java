@@ -56,7 +56,6 @@ public class BOJ10610 {
             System.out.println(-1);
             return;
         }
-
         // 내림차순 정렬해서 최대 수 만들기
         Arrays.sort(digits);
         StringBuilder sb = new StringBuilder(new String(digits));
