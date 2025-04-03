@@ -39,5 +39,34 @@
  */
 package baekjoon.year2025.april;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class BOJ1783 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        // 입력 처리
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int N = Integer.parseInt(st.nextToken()); // 세로
+        int M = Integer.parseInt(st.nextToken()); // 가로
+
+        int result = 0;
+
+        if (N == 1) {
+            result = 1;
+        } else if (N == 2) {
+            result = Math.min(4, (M + 1) / 2);
+        } else {
+            if (M < 7) {
+                result = Math.min(4, M);
+            } else {
+                result = M - 2;
+            }
+        }
+
+        System.out.println(result);
+    }
 }
