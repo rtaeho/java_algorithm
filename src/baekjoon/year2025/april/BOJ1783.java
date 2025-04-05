@@ -66,7 +66,6 @@ public class BOJ1783 {
                 result = M - 2;
             }
         }
-
         System.out.println(result);
     }
 }
