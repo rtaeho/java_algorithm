@@ -71,7 +71,6 @@ public class BOJ12970 {
                 return;
             }
         }
-
         // 조건을 만족하는 문자열이 없으면
         System.out.println("-1");
     }
