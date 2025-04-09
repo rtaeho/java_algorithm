@@ -35,43 +35,52 @@ import java.io.IOException;
 import java.util.StringTokenizer;
 
 public class BOJ12970 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static class Main {
+        static int N, K;
 
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int N = Integer.parseInt(st.nextToken());
-        int K = Integer.parseInt(st.nextToken());
+        public static void main(String[] args) throws IOException {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            StringTokenizer st = new StringTokenizer(br.readLine());
 
-        for (int aCount = 0; aCount <= N; aCount++) {
-            int bCount = N - aCount;
-            int maxPair = aCount * bCount;
+            N = Integer.parseInt(st.nextToken());
+            K = Integer.parseInt(st.nextToken());
 
-            if (maxPair >= K) {
-                // A가 앞쪽에 있어야 (A, B) 쌍이 생김
+            // A 개수 a를 0부터 N까지 시도
+            for (int a = 0; a <= N; a++) {
+                int b = N - a;
+
+                // A와 B로 만들 수 있는 최대 쌍 수는 a * b
+                if (a * b < K) {
+                    continue;
+                }
+
+                // B를 먼저 배치하고, A를 어디에 넣을지 정한다
+                int[] A = new int[b + 1];  // A[i]: i번째 B 뒤에 놓을 A의 수
+
+                for (int i = 0; i < a; i++) {
+                    // 오른쪽부터 최대한 B 뒤에 넣기
+                    int idx = Math.min(K, b);
+                    A[idx]++;
+                    K -= idx;
+                }
+
+                // 출력 (B를 기준으로 A를 왼쪽에 붙이는 방식)
                 StringBuilder sb = new StringBuilder();
-                int[] result = new int[N];
-
-                // 일단 모두 B로 초기화
-                for (int i = 0; i < N; i++) {
-                    result[i] = 'B';
+                for (int i = b; i >= 0; i--) {
+                    for (int j = 0; j < A[i]; j++) {
+                        sb.append("A");
+                    }
+                    if (i > 0) {
+                        sb.append("B");
+                    }
                 }
 
-                // A를 왼쪽부터 하나씩 배치하며 쌍의 개수를 맞춤
-                for (int i = 0; i < aCount; i++) {
-                    int pos = Math.min(K, bCount); // A가 만들 수 있는 최대 쌍 수
-                    result[i] = 'A';
-                    K -= pos;
-                }
-
-                // 결과 출력
-                for (int i = 0; i < N; i++) {
-                    sb.append((char) result[i]);
-                }
-                System.out.println(sb.toString());
+                System.out.println(sb);
                 return;
             }
+
+            // 만들 수 없는 경우
+            System.out.println("-1");
         }
-        // 조건을 만족하는 문자열이 없으면
-        System.out.println("-1");
     }
 }
