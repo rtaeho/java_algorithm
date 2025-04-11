@@ -25,7 +25,31 @@ ABB
 예제 출력 2
 0
  */
-package baekjoon.year2025.april;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class BOJ12904 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String S = br.readLine();
+        StringBuilder T = new StringBuilder(br.readLine());
+
+        while (T.length() > S.length()) {
+            int last = T.length() - 1;
+            if (T.charAt(last) == 'A') {
+                T.deleteCharAt(last); // A 제거
+            } else if (T.charAt(last) == 'B') {
+                T.deleteCharAt(last); // B 제거
+                T.reverse();          // 뒤집기
+            }
+        }
+
+        if (T.toString().equals(S)) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+    }
 }
