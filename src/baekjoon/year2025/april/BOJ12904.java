@@ -1,4 +1,4 @@
-package baekjoon.year2025.april;/*
+/*
 문제
 수빈이는 A와 B로만 이루어진 영어 단어가 존재한다는 사실에 놀랐다. 대표적인 예로 AB (Abdominal의 약자), BAA (양의 울음 소리), AA (용암의 종류), ABBA (스웨덴 팝 그룹)이 있다.
 
@@ -25,6 +25,7 @@ ABB
 예제 출력 2
 0
  */
+package baekjoon.year2025.april;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
