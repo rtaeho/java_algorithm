@@ -31,5 +31,53 @@
  */
 package baekjoon.year2025.april;
 
+import java.io.*;
+import java.util.StringTokenizer;
+
 public class BOJ11728 {
+    public static void main(String[] args) throws IOException {
+        // 입력 처리
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+
+        // 배열 크기 입력
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
+
+        // 배열 A 입력
+        int[] A = new int[N];
+        st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < N; i++) {
+            A[i] = Integer.parseInt(st.nextToken());
+        }
+
+        // 배열 B 입력
+        int[] B = new int[M];
+        st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < M; i++) {
+            B[i] = Integer.parseInt(st.nextToken());
+        }
+
+        // 투 포인터로 병합
+        int i = 0, j = 0;
+        while (i < N && j < M) {
+            if (A[i] <= B[j]) {
+                sb.append(A[i++]).append(' ');
+            } else {
+                sb.append(B[j++]).append(' ');
+            }
+        }
+
+        // 남은 원소 처리
+        while (i < N) {
+            sb.append(A[i++]).append(' ');
+        }
+        while (j < M) {
+            sb.append(B[j++]).append(' ');
+        }
+
+        // 출력
+        System.out.println(sb);
+    }
 }
