@@ -30,5 +30,67 @@ N×N크기의 행렬로 표현되는 종이가 있다. 종이의 각 칸에는 -
  */
 package baekjoon.year2025.april;
 
+import java.io.*;
+import java.util.StringTokenizer;
+
 public class BOJ1780 {
+    static int[][] paper;
+    static int countMinus = 0;
+    static int countZero = 0;
+    static int countOne = 0;
+
+    public static void main(String[] args) throws IOException {
+        // 입력 처리
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
+        paper = new int[N][N];
+
+        for (int i = 0; i < N; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < N; j++) {
+                paper[i][j] = Integer.parseInt(st.nextToken());
+            }
+        }
+
+        divide(0, 0, N);
+
+        // 결과 출력
+        System.out.println(countMinus);
+        System.out.println(countZero);
+        System.out.println(countOne);
+    }
+
+    // 종이 분할 함수
+    static void divide(int x, int y, int size) {
+        if (isSameNumber(x, y, size)) {
+            if (paper[x][y] == -1) {
+                countMinus++;
+            } else if (paper[x][y] == 0) {
+                countZero++;
+            } else {
+                countOne++;
+            }
+            return;
+        }
+
+        int newSize = size / 3;
+        for (int dx = 0; dx < 3; dx++) {
+            for (int dy = 0; dy < 3; dy++) {
+                divide(x + dx * newSize, y + dy * newSize, newSize);
+            }
+        }
+    }
+
+    // 현재 종이 영역이 모두 같은 수인지 검사
+    static boolean isSameNumber(int x, int y, int size) {
+        int num = paper[x][y];
+        for (int i = x; i < x + size; i++) {
+            for (int j = y; j < y + size; j++) {
+                if (paper[i][j] != num) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
