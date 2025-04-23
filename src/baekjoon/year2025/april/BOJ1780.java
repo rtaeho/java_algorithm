@@ -92,5 +92,6 @@ public class BOJ1780 {
             }
         }
         return true;
+        
     }
 }
