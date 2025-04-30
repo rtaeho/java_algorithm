@@ -101,5 +101,41 @@ r행 c열을 몇 번째로 방문했는지 출력한다.
  */
 package baekjoon.year2025.may;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
 public class BOJ1074 {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(st.nextToken());
+        int r = Integer.parseInt(st.nextToken());
+        int c = Integer.parseInt(st.nextToken());
+
+        System.out.println(getOrder(N, r, c));
+    }
+
+    // Z 탐색에서 (r, c)가 몇 번째로 방문되는가?
+    static int getOrder(int n, int r, int c) {
+        if (n == 0) {
+            return 0;
+        }
+
+        int half = 1 << (n - 1); // 2^(n-1)
+        int blockSize = half * half;
+
+        if (r < half && c < half) { // 1사분면 (왼쪽 위)
+            return getOrder(n - 1, r, c);
+        } else if (r < half && c >= half) { // 2사분면 (오른쪽 위)
+            return blockSize + getOrder(n - 1, r, c - half);
+        } else if (r >= half && c < half) { // 3사분면 (왼쪽 아래)
+            return 2 * blockSize + getOrder(n - 1, r - half, c);
+        } else { // 4사분면 (오른쪽 아래)
+            return 3 * blockSize + getOrder(n - 1, r - half, c - half);
+        }
+    }
 }
