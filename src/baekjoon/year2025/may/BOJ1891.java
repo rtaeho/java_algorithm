@@ -30,5 +30,74 @@
  */
 package baekjoon.year2025.may;
 
+import java.io.*;
+
 public class BOJ1891 {
+
+    static int d;
+    static String code;
+    static int dx, dy;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        // 1. 입력
+        String[] input = br.readLine().split(" ");
+        d = Integer.parseInt(input[0]);
+        code = input[1];
+
+        String[] move = br.readLine().split(" ");
+        dx = Integer.parseInt(move[0]);
+        dy = Integer.parseInt(move[1]);
+
+        // 2. 사분면 번호 → 좌표
+        long size = 1L << d; // 2^d
+        long x = 0, y = 0;
+
+        for (int i = 0; i < d; i++) {
+            size /= 2;
+            char ch = code.charAt(i);
+            if (ch == '1') {
+                x += size;
+                y += size;
+            } else if (ch == '2') {
+                y += size;
+            } else if (ch == '3') {
+                // nothing
+            } else if (ch == '4') {
+                x += size;
+            }
+        }
+
+        // 3. 이동
+        x += dx;
+        y += dy;
+
+        long max = 1L << d;
+        if (x < 0 || y < 0 || x >= max || y >= max) {
+            System.out.println(-1);
+            return;
+        }
+
+        // 4. 좌표 → 사분면 번호
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < d; i++) {
+            max /= 2;
+            if (x >= max && y >= max) {
+                sb.append('1');
+                x -= max;
+                y -= max;
+            } else if (x < max && y >= max) {
+                sb.append('2');
+                y -= max;
+            } else if (x < max && y < max) {
+                sb.append('3');
+            } else { // x >= max && y < max
+                sb.append('4');
+                x -= max;
+            }
+        }
+
+        System.out.println(sb);
+    }
 }
