@@ -30,74 +30,90 @@
  */
 package baekjoon.year2025.may;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class BOJ1891 {
-
+    static String findNum_s;
     static int d;
-    static String code;
-    static int dx, dy;
+    static long x, y;
+    static long find_x = 0;
+    static long find_y = 0;
+    static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        // 1. 입력
-        String[] input = br.readLine().split(" ");
-        d = Integer.parseInt(input[0]);
-        code = input[1];
+        d = Integer.parseInt(st.nextToken());
+        findNum_s = st.nextToken();
 
-        String[] move = br.readLine().split(" ");
-        dx = Integer.parseInt(move[0]);
-        dy = Integer.parseInt(move[1]);
+        st = new StringTokenizer(br.readLine());
+        y = Long.parseLong(st.nextToken()); // 위아래
+        x = Long.parseLong(st.nextToken()); // 좌우
 
-        // 2. 사분면 번호 → 좌표
-        long size = 1L << d; // 2^d
-        long x = 0, y = 0;
+        long size = 1L << d; // 전체 맵 크기
+        findPosition(0, 0, 0, size, size);
 
-        for (int i = 0; i < d; i++) {
-            size /= 2;
-            char ch = code.charAt(i);
-            if (ch == '1') {
-                x += size;
-                y += size;
-            } else if (ch == '2') {
-                y += size;
-            } else if (ch == '3') {
-                // nothing
-            } else if (ch == '4') {
-                x += size;
-            }
-        }
+        find_x -= x;
+        find_y += y;
 
-        // 3. 이동
-        x += dx;
-        y += dy;
-
-        long max = 1L << d;
-        if (x < 0 || y < 0 || x >= max || y >= max) {
+        if (0 <= find_x && find_x < size && 0 <= find_y && find_y < size) {
+            getQuadrant(d, find_x, find_y);
+            System.out.println(sb);
+        } else {
             System.out.println(-1);
+        }
+    }
+
+    static void findPosition(int idx, long lx, long ly, long rx, long ry) {
+        if (idx == d) {
+            find_x = lx;
+            find_y = ly;
             return;
         }
 
-        // 4. 좌표 → 사분면 번호
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < d; i++) {
-            max /= 2;
-            if (x >= max && y >= max) {
-                sb.append('1');
-                x -= max;
-                y -= max;
-            } else if (x < max && y >= max) {
-                sb.append('2');
-                y -= max;
-            } else if (x < max && y < max) {
-                sb.append('3');
-            } else { // x >= max && y < max
-                sb.append('4');
-                x -= max;
-            }
+        int num = findNum_s.charAt(idx) - '0';
+        long mx = (lx + rx) / 2;
+        long my = (ly + ry) / 2;
+
+        switch (num) {
+            case 1:
+                findPosition(idx + 1, lx, my, mx, ry);
+                break;
+            case 2:
+                findPosition(idx + 1, lx, ly, mx, my);
+                break;
+            case 3:
+                findPosition(idx + 1, mx, ly, rx, my);
+                break;
+            case 4:
+                findPosition(idx + 1, mx, my, rx, ry);
+                break;
+        }
+    }
+
+    static void getQuadrant(int len, long tx, long ty) {
+        if (len == 0) {
+            return;
         }
 
-        System.out.println(sb);
+        long half = 1L << (len - 1);
+
+        if (tx < half && ty >= half) {
+            sb.append("1");
+            getQuadrant(len - 1, tx, ty - half);
+        } else if (tx < half && ty < half) {
+            sb.append("2");
+            getQuadrant(len - 1, tx, ty);
+        } else if (tx >= half && ty < half) {
+            sb.append("3");
+            getQuadrant(len - 1, tx - half, ty);
+        } else {
+            sb.append("4");
+            getQuadrant(len - 1, tx - half, ty - half);
+        }
     }
 }
