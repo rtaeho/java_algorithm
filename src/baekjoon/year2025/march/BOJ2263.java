@@ -44,6 +44,7 @@ public class BOJ2263 {
         for (int i = 0; i < n; i++) {
             postorder[i] = Integer.parseInt(st.nextToken());
         }
+
         buildPreorder(0, n - 1, 0, n - 1);
         System.out.println(sb);
     }
