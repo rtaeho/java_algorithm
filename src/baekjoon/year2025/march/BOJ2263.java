@@ -39,7 +39,6 @@ public class BOJ2263 {
             inorder[i] = Integer.parseInt(st.nextToken());
             inorderIndex[inorder[i]] = i;
         }
-
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
             postorder[i] = Integer.parseInt(st.nextToken());
