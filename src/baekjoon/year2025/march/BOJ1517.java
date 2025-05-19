@@ -72,8 +72,7 @@ public class BOJ1517 {
             temp[k++] = arr[j++];
         }
 
-        for (int l = left; l <= right; l++) {
-            arr[l] = temp[l];
-        }
+        if (right + 1 - left >= 0)
+            System.arraycopy(temp, left, arr, left, right + 1 - left);
     }
 }
