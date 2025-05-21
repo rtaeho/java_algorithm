@@ -29,5 +29,79 @@ N개의 직사각형 모양의 건물들이 주어졌을 때, 스카이라인을
  */
 package baekjoon.year2025.march;
 
+import java.io.*;
+import java.util.*;
+
 public class BOJ1933 {
+    static class Event implements Comparable<Event> {
+        int x, h;
+        boolean isStart;
+
+        Event(int x, int h, boolean isStart) {
+            this.x = x;
+            this.h = h;
+            this.isStart = isStart;
+        }
+
+        @Override
+        public int compareTo(Event other) {
+            if (this.x != other.x) {
+                return Integer.compare(this.x, other.x);
+            }
+            if (this.isStart && other.isStart) {
+                return Integer.compare(other.h, this.h);
+            }
+            if (!this.isStart && !other.isStart) {
+                return Integer.compare(this.h, other.h);
+            }
+            return this.isStart ? -1 : 1;
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
+
+        List<Event> events = new ArrayList<>();
+
+        for (int i = 0; i < N; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            int L = Integer.parseInt(st.nextToken());
+            int H = Integer.parseInt(st.nextToken());
+            int R = Integer.parseInt(st.nextToken());
+            events.add(new Event(L, H, true));
+            events.add(new Event(R, H, false));
+        }
+
+        Collections.sort(events);
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        Map<Integer, Integer> heightCount = new HashMap<>();
+        pq.add(0);
+        heightCount.put(0, 1);
+
+        int prevHeight = 0;
+        StringBuilder sb = new StringBuilder();
+
+        for (Event e : events) {
+            if (e.isStart) {
+                pq.add(e.h);
+                heightCount.put(e.h, heightCount.getOrDefault(e.h, 0) + 1);
+            } else {
+                heightCount.put(e.h, heightCount.get(e.h) - 1);
+            }
+
+            while (!pq.isEmpty() && heightCount.get(pq.peek()) == 0) {
+                pq.poll();
+            }
+
+            int currHeight = pq.peek();
+            if (currHeight != prevHeight) {
+                sb.append(e.x).append(" ").append(currHeight).append(" ");
+                prevHeight = currHeight;
+            }
+        }
+
+        System.out.println(sb.toString().trim());
+    }
 }
