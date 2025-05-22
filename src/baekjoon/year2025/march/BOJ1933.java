@@ -101,7 +101,6 @@ public class BOJ1933 {
                 prevHeight = currHeight;
             }
         }
-
         System.out.println(sb.toString().trim());
     }
 }
