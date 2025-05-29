@@ -76,7 +76,6 @@ public class BOJ10825 {
 
             students.add(new Student(name, korean, english, math));
         }
-
         students.sort((a, b) -> {
             if (a.korean != b.korean) {
                 return b.korean - a.korean;                   // 국어 감소
