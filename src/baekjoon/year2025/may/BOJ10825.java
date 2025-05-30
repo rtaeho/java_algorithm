@@ -88,7 +88,6 @@ public class BOJ10825 {
             }
             return a.name.compareTo(b.name);                                       // 이름 사전순
         });
-
         StringBuilder sb = new StringBuilder();
         for (Student s : students) {
             sb.append(s.name).append('\n');
