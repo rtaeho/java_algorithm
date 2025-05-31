@@ -32,5 +32,38 @@
  */
 package baekjoon.year2025.june;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
 public class BOJ11652 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int N = Integer.parseInt(br.readLine());
+        Map<Long, Integer> countMap = new HashMap<>();
+
+        for (int i = 0; i < N; i++) {
+            long num = Long.parseLong(br.readLine());
+            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
+        }
+
+        long answer = 0;
+        int maxCount = 0;
+
+        for (Map.Entry<Long, Integer> entry : countMap.entrySet()) {
+            long key = entry.getKey();
+            int value = entry.getValue();
+
+            if (value > maxCount) {
+                maxCount = value;
+                answer = key;
+            } else if (value == maxCount) {
+                answer = Math.min(answer, key);
+            }
+        }
+
+        System.out.println(answer);
+    }
 }
