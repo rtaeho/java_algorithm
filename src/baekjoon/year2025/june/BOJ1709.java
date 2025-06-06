@@ -19,5 +19,41 @@
  */
 package baekjoon.year2025.june;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class BOJ1709 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        long N = Long.parseLong(st.nextToken());
+        long k = Long.parseLong(st.nextToken());
+
+        long len = 1;
+        long count = 9;
+        long start = 1;
+
+        while (k > len * count && start + count - 1 <= N) {
+            k -= len * count;
+            start *= 10;
+            len++;
+            count *= 10;
+        }
+
+        long end = Math.min(N, start + count - 1);
+
+        long numberIndex = (k - 1) / len;
+        long digitIndex = (k - 1) % len;
+
+        long target = start + numberIndex;
+
+        if (target > end) {
+            System.out.println(-1);
+        } else {
+            System.out.println(Long.toString(target).charAt((int) digitIndex));
+        }
+    }
 }
