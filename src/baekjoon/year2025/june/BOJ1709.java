@@ -56,5 +56,4 @@ public class BOJ1709 {
             System.out.println(Long.toString(target).charAt((int) digitIndex));
         }
     }
-    
 }
