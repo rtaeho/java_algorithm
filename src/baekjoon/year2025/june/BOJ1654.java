@@ -23,5 +23,49 @@
  */
 package baekjoon.year2025.june;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
 public class BOJ1654 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int K = Integer.parseInt(st.nextToken());  // 이미 가지고 있는 랜선 수
+        int N = Integer.parseInt(st.nextToken());  // 필요한 랜선 수
+
+        int[] lengths = new int[K];
+        long max = 0;
+
+        for (int i = 0; i < K; i++) {
+            lengths[i] = Integer.parseInt(br.readLine());
+            if (lengths[i] > max) {
+                max = lengths[i];
+            }
+        }
+
+        long left = 1;
+        long right = max;
+        long result = 0;
+
+        while (left <= right) {
+            long mid = (left + right) / 2;
+            long count = 0;
+
+            for (int i = 0; i < K; i++) {
+                count += lengths[i] / mid;
+            }
+
+            if (count >= N) {
+                result = mid;       // 가능한 경우, 더 큰 길이도 가능할 수 있음
+                left = mid + 1;
+            } else {
+                right = mid - 1;    // 너무 길게 잘라서 부족함
+            }
+        }
+
+        System.out.println(result);
+    }
 }
