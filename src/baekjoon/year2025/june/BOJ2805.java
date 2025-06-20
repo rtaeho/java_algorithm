@@ -36,33 +36,33 @@ public class BOJ2805 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        
+
         int N = Integer.parseInt(st.nextToken());
         long M = Long.parseLong(st.nextToken());
-        
+
         int[] trees = new int[N];
         st = new StringTokenizer(br.readLine());
         long max = 0;
-        
+
         for (int i = 0; i < N; i++) {
             trees[i] = Integer.parseInt(st.nextToken());
             max = Math.max(max, trees[i]);
         }
-        
+
         long start = 0;
         long end = max;
         long result = 0;
-        
+
         while (start <= end) {
             long mid = (start + end) / 2;
             long sum = 0;
-            
+
             for (int tree : trees) {
                 if (tree > mid) {
                     sum += (tree - mid);
                 }
             }
-            
+
             if (sum >= M) {
                 result = mid;
                 start = mid + 1;
@@ -70,7 +70,7 @@ public class BOJ2805 {
                 end = mid - 1;
             }
         }
-        
+
         System.out.println(result);
     }
 }
