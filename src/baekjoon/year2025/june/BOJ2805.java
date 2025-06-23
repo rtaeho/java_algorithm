@@ -70,6 +70,7 @@ public class BOJ2805 {
                 end = mid - 1;
             }
         }
+
         System.out.println(result);
     }
 }
