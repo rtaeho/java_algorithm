@@ -73,6 +73,7 @@ public class BOJ2110 {
                 lastInstalled = houses[i];
             }
         }
+
         return count >= C;
     }
 }
