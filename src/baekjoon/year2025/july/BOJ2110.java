@@ -22,7 +22,7 @@ C개의 공유기를 N개의 집에 적당히 설치해서, 가장 인접한 두
 예제 출력 1 
 3
  */
-package baekjoon.year2025.june;
+package baekjoon.year2025.july;
 
 import java.io.*;
 import java.util.*;
