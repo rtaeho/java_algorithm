@@ -109,7 +109,6 @@ public class BOJ1939 {
                 }
             }
         }
-
         return false;
     }
 }
