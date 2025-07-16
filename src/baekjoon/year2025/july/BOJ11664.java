@@ -98,5 +98,6 @@ public class BOJ11664 {
         double y = A.y + (B.y - A.y) * t;
         double z = A.z + (B.z - A.z) * t;
         return new Point(x, y, z).distanceTo(C);
+
     }
 }
