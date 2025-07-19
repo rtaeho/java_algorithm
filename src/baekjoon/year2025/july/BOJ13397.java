@@ -57,6 +57,68 @@ N개의 수로 이루어진 1차원 배열이 있다. 이 배열을 M개 이하�
  */
 package baekjoon.year2025.july;
 
-public class BOJ13397 {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
+public class BOJ13397 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
+
+        int[] arr = new int[N];
+        st = new StringTokenizer(br.readLine());
+
+        // 배열 입력받으면서 최대값 찾기
+        int max = 0;
+        for (int i = 0; i < N; i++) {
+            arr[i] = Integer.parseInt(st.nextToken());
+            max = Math.max(max, arr[i]);
+        }
+
+        // 이분 탐색
+        int left = 0; // 최소 점수 차이
+        int right = max; // 최대 점수 차이
+
+        while (left < right) {
+            int mid = (left + right) / 2;
+
+            if (isPossible(arr, N, M, mid)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        System.out.println(left);
+    }
+
+    // 주어진 점수 차이(score)로 M개 이하의 구간으로 나눌 수 있는지 확인
+    private static boolean isPossible(int[] arr, int N, int M, int score) {
+        int count = 1; // 구간의 개수
+        int min = arr[0]; // 현재 구간의 최솟값
+        int max = arr[0]; // 현재 구간의 최댓값
+
+        for (int i = 1; i < N; i++) {
+            int curr = arr[i];
+            int nextMin = Math.min(min, curr);
+            int nextMax = Math.max(max, curr);
+
+            // 현재 구간에 포함시켰을 때 점수가 기준을 초과하면 새로운 구간 시작
+            if (nextMax - nextMin > score) {
+                count++;
+                min = curr;
+                max = curr;
+            } else {
+                min = nextMin;
+                max = nextMax;
+            }
+        }
+
+        return count <= M; // M개 이하의 구간으로 나눌 수 있으면 true
+    }
 }
