@@ -33,6 +33,7 @@ import java.util.*;
  * 2. BFS - 현재 차이값으로 경로가 존재하는지 확인
  * 3. 매개 변수 탐색 - 특정 차이값에 대한 가능성을 판단
  */
+
 public class BOJ1981 {
     // 전역 변수 선언
     static int n; // 배열의 크기
