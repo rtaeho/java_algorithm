@@ -92,7 +92,6 @@ public class BOJ1561 {
                     System.out.println(i + 1);
                     break;
                 }
-
             }
         }
     }
