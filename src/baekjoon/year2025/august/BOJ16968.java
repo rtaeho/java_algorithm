@@ -41,7 +41,38 @@ import java.io.IOException;
 public class BOJ16968 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] input = br.readLine().split("");
+        String format = br.readLine();
+        
         int result = 1;
+        char prev = ' '; // 이전 문자를 저장
+        
+        for (int i = 0; i < format.length(); i++) {
+            char current = format.charAt(i);
+            
+            if (current == 'c') {
+                // 문자인 경우: 26개 중 선택
+                if (prev == 'c') {
+                    // 이전에도 문자가 있었다면 25개 (같은 문자 제외)
+                    result *= 25;
+                } else {
+                    // 첫 번째 문자라면 26개
+                    result *= 26;
+                }
+            } else if (current == 'd') {
+                // 숫자인 경우: 10개 중 선택
+                if (prev == 'd') {
+                    // 이전에도 숫자가 있었다면 9개 (같은 숫자 제외)
+                    result *= 9;
+                } else {
+                    // 첫 번째 숫자라면 10개
+                    result *= 10;
+                }
+            }
+            
+            prev = current;
+        }
+        
+        System.out.println(result);
+        br.close();
     }
 }
