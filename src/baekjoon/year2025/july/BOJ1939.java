@@ -52,7 +52,6 @@ public class BOJ1939 {
         for (int i = 1; i <= N; i++) {
             graph[i] = new ArrayList<>();
         }
-
         int maxWeight = 0;
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
