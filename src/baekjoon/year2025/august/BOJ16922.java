@@ -43,20 +43,20 @@ public class BOJ16922 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
-        
+
         // 각 문자가 나타내는 값
-        int[] values = {1, 5, 10, 50};
-        
+        int[] values = { 1, 5, 10, 50 };
+
         // 가능한 모든 수를 저장할 Set (중복 제거)
         Set<Integer> possibleSums = new HashSet<>();
-        
+
         // N개의 문자를 선택하는 모든 경우의 수를 생성
         generateSums(values, N, 0, 0, possibleSums);
-        
+
         System.out.println(possibleSums.size());
         br.close();
     }
-    
+
     // 재귀적으로 모든 가능한 합을 생성하는 메서드
     private static void generateSums(int[] values, int remaining, int start, int currentSum, Set<Integer> sums) {
         // 남은 문자가 없으면 현재 합을 결과에 추가
@@ -64,11 +64,10 @@ public class BOJ16922 {
             sums.add(currentSum);
             return;
         }
-        
+
         // 각 문자를 선택하는 경우를 시도
         for (int i = start; i < values.length; i++) {
             generateSums(values, remaining - 1, i, currentSum + values[i], sums);
         }
     }
-    
 }
