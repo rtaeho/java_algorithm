@@ -70,4 +70,5 @@ public class BOJ16922 {
             generateSums(values, remaining - 1, i, currentSum + values[i], sums);
         }
     }
+    
 }
