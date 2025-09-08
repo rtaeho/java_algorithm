@@ -36,61 +36,67 @@ public class BOJ16936 {
     static long[] result;
     static boolean[] used;
     static boolean found;
-    
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         b = new long[n];
         result = new long[n];
         used = new boolean[n];
-        
+
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
             b[i] = Long.parseLong(st.nextToken());
         }
-        
+
         for (int i = 0; i < n; i++) {
             Arrays.fill(used, false);
             result[0] = b[i];
             used[i] = true;
             found = false;
-            
+
             dfs(1);
-            if (found) break;
+            if (found)
+                break;
         }
-        
+
         for (int i = 0; i < n; i++) {
             System.out.print(result[i]);
-            if (i < n - 1) System.out.print(" ");
+            if (i < n - 1)
+                System.out.print(" ");
         }
         System.out.println();
     }
-    
+
     static void dfs(int depth) {
-        if (found) return;
+        if (found)
+            return;
         if (depth == n) {
             found = true;
             return;
         }
-        
+
         long current = result[depth - 1];
-        
+
         for (int i = 0; i < n; i++) {
-            if (used[i]) continue;
-            
+            if (used[i])
+                continue;
+
             if (current % 3 == 0 && current / 3 == b[i]) {
                 result[depth] = b[i];
                 used[i] = true;
                 dfs(depth + 1);
-                if (found) return;
+                if (found)
+                    return;
                 used[i] = false;
             }
-            
+
             if (current * 2 == b[i]) {
                 result[depth] = b[i];
                 used[i] = true;
                 dfs(depth + 1);
-                if (found) return;
+                if (found)
+                    return;
                 used[i] = false;
             }
         }
