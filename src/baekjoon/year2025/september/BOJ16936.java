@@ -67,7 +67,6 @@ public class BOJ16936 {
         }
         System.out.println();
     }
-
     static void dfs(int depth) {
         if (found)
             return;
