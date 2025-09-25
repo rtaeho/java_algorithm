@@ -40,6 +40,7 @@
 예제 출력 3 
 0
  */
+
 package baekjoon.year2025.september;
 
 import java.io.*;
