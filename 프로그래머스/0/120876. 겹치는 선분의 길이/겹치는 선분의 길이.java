@@ -6,7 +6,7 @@ class Solution {
         
         for(int i = 0; i < 3; i++){
             int start = lines[i][0];
-            int end = lines[i][lines.length - 2];
+            int end = lines[i][1];
             
             for(int j = start; j < end; j++){
                 lineCount.put(j, lineCount.getOrDefault(j, 0) + 1);
