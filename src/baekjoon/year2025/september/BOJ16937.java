@@ -112,7 +112,6 @@ public class BOJ16937 {
         if (r1 + r2 <= H && Math.max(c1, c2) <= W) {
             return true;
         }
-
         return false;
     }
 }
