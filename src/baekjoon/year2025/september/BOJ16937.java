@@ -48,7 +48,6 @@ import java.util.*;
 public class BOJ16937 {
     static int H, W, N;
     static int[][] stickers;
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
