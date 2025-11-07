@@ -45,6 +45,7 @@ package baekjoon.year2025.september;
 import java.io.*;
 import java.util.*;
 
+
 public class BOJ16937 {
     static int H, W, N;
     static int[][] stickers;
