@@ -65,7 +65,6 @@ public class BOJ16937 {
         }
 
         int maxArea = 0;
-
         // 모든 스티커 쌍을 확인
         for (int i = 0; i < N; i++) {
             for (int j = i + 1; j < N; j++) {
