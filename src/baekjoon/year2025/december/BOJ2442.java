@@ -24,7 +24,6 @@ public class BOJ2442 {
 
             sb.append("\n");
         }
-
         System.out.print(sb.toString());
     }
 }
