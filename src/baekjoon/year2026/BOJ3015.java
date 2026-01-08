@@ -7,7 +7,7 @@ import java.util.Stack;
 
 public class BOJ3015 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         long result = 0;
         Stack<int[]> stack = new Stack<>();
