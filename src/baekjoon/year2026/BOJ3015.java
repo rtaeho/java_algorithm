@@ -9,7 +9,7 @@ public class BOJ3015 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));;
         int n = Integer.parseInt(br.readLine());
-        int result = 0;
+        long result = 0;
         Stack<int[]> stack = new Stack<>();
 
         for (int i = 0; i < n; i++) {
@@ -23,7 +23,6 @@ public class BOJ3015 {
                     cnt += top[1];
                 }
                 // 작은 경우는 위에서 pop 했기에 별도 처리 불필요
-
             }
             if(!stack.isEmpty()) { // 남아있으면
                 result++;
