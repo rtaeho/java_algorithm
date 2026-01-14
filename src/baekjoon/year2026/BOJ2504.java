@@ -52,6 +52,10 @@ public class BOJ2504 {
                 }
             }
         }
+        if(!stack.isEmpty()){
+            System.out.println(0);
+            return;
+        }
         System.out.println(result);
 
 
