@@ -1,77 +1,91 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 public class Main {
-    static int L, R, C;
-    static char[][][] map;
-    static int[][][] dist;
-    // 6방향 (상, 하, 북, 남, 동, 서)
-    static int[] dl = {1, -1, 0, 0, 0, 0};
-    static int[] dr = {0, 0, 1, -1, 0, 0};
-    static int[] dc = {0, 0, 0, 0, 1, -1};
+    // 동서남북상하
+    static int[] dx = {1, -1, 0, 0, 0, 0};
+    static int[] dy = {0, 0, 1, -1, 0, 0};
+    static int[] dz = {0, 0, 0, 0, 1, -1};
+    static int l, r, c;
+    static int[][][] room;
+    static Queue<int[]> queue;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+        StringTokenizer st;
         while (true) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            L = Integer.parseInt(st.nextToken());
-            R = Integer.parseInt(st.nextToken());
-            C = Integer.parseInt(st.nextToken());
+            String line = br.readLine();
+            if (line == null || line.isEmpty()) {
+                line = br.readLine();
+            }
 
-            if (L == 0 && R == 0 && C == 0) break; // 종료 조건
-
-            map = new char[L][R][C];
-            dist = new int[L][R][C];
-            int sl = 0, sr = 0, sc = 0; // 시작 지점 저장용
-
-            for (int i = 0; i < L; i++) {
-                for (int j = 0; j < R; j++) {
-                    String line = br.readLine();
-                    for (int k = 0; k < C; k++) {
-                        map[i][j][k] = line.charAt(k);
-                        dist[i][j][k] = -1; // 미방문 표시
-                        if (map[i][j][k] == 'S') {
-                            sl = i; sr = j; sc = k;
-                            dist[i][j][k] = 0;
+            st = new StringTokenizer(line);
+            l = Integer.parseInt(st.nextToken());
+            r = Integer.parseInt(st.nextToken());
+            c = Integer.parseInt(st.nextToken());
+            if (l == 0 && r == 0 && c == 0) {
+                break;
+            }
+            room = new int[l][r][c];
+            queue = new LinkedList<>();
+            int[] exit = new int[3];
+            for (int i = 0; i < l; i++) {
+                for (int j = 0; j < r; j++) {
+                    String str = br.readLine();
+                    for (int k = 0; k < c; k++) {
+                        char c = str.charAt(k);
+                        if (c == 'S') { // 시작
+                            queue.add(new int[]{i, j, k});
+                            room[i][j][k] = 0;
+                        } else if (c == '#') { // 벽
+                            room[i][j][k] = -1;
+                        } else if (c == 'E') { // 출구
+                            exit = new int[]{i, j, k};
+                            room[i][j][k] = -2;
+                        } else { // 나머지
+                            room[i][j][k] = -3;
                         }
                     }
                 }
-                br.readLine(); // 층 사이의 빈 줄 처리
+                br.readLine(); // 개행 제거
             }
 
-            bfs(sl, sr, sc);
+            int result = bfs();
+            if (result == -1) {
+                System.out.println("Trapped!");
+            } else {
+                System.out.println("Escaped in " + result + " minute(s).");
+            }
         }
     }
 
-    static void bfs(int sl, int sr, int sc) {
-        Queue<int[]> q = new LinkedList<>();
-        q.add(new int[]{sl, sr, sc});
-
-        while (!q.isEmpty()) {
-            int[] cur = q.poll();
-            int l = cur[0];
-            int r = cur[1];
-            int c = cur[2];
-
-            if (map[l][r][c] == 'E') {
-                System.out.println("Escaped in " + dist[l][r][c] + " minute(s).");
-                return;
-            }
+    private static int bfs() {
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int z = cur[0];
+            int y = cur[1];
+            int x = cur[2];
 
             for (int i = 0; i < 6; i++) {
-                int nl = l + dl[i];
-                int nr = r + dr[i];
-                int nc = c + dc[i];
+                int tx = x + dx[i];
+                int ty = y + dy[i];
+                int tz = z + dz[i];
 
-                if (nl >= 0 && nl < L && nr >= 0 && nr < R && nc >= 0 && nc < C) {
-                    if (map[nl][nr][nc] != '#' && dist[nl][nr][nc] == -1) {
-                        dist[nl][nr][nc] = dist[l][r][c] + 1;
-                        q.add(new int[]{nl, nr, nc});
+                if (tx >= 0 && tx < c && ty >= 0 && ty < r && tz >= 0 && tz < l) {
+                    if (room[tz][ty][tx] == -2) {
+                        return room[z][y][x] + 1;
+                    }
+                    if (room[tz][ty][tx] == -3) {
+                        room[tz][ty][tx] = room[z][y][x] + 1;
+                        queue.add(new int[]{tz, ty, tx});
                     }
                 }
             }
         }
-        System.out.println("Trapped!");
+        return -1;
     }
 }
