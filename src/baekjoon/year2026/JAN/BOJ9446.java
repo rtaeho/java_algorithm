@@ -1,4 +1,4 @@
-package baekjoon.year2026;
+package baekjoon.year2026.JAN;
 
 import java.io.*;
 import java.util.*;
