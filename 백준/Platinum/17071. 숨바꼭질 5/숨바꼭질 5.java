@@ -29,7 +29,7 @@ public class Main {
         int time = 0;
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(N);
-        visited[0][N] = 1;
+        visited[0][N] = 0;
 
         while(!queue.isEmpty()) {
             // 수빈이가 해당 시간에 지나갔던 위치를 동생이 지나가는지 보고
