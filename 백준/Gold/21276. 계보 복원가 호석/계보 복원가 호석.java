@@ -90,6 +90,7 @@ public class Main {
 
         for (String name : names) {
             ArrayList<String> children = direct.get(name);
+            Collections.sort(children);
             sb.append(name).append(" ").append(children.size()).append(" ");
             for (String child : children) {
                 sb.append(child).append(" ");
