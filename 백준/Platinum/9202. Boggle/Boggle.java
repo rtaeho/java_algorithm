@@ -27,14 +27,11 @@ public class Main {
             words[i] = br.readLine();
         }
 
-        Arrays.sort(words, new Comparator<String>() {
-            @Override
-            public int compare(String a, String b) {
-                if (a.length() != b.length()) {
-                    return b.length() - a.length();
-                }
-                return a.compareTo(b);
+        Arrays.sort(words, (a, b) -> {
+            if (a.length() != b.length()) {
+                return b.length() - a.length();
             }
+            return a.compareTo(b);
         });
 
         br.readLine();
@@ -99,7 +96,7 @@ public class Main {
         if (board[r][c] != word.charAt(idx)) {
             return false;
         }
-        
+
         if (idx == word.length() - 1) {
             return true;
         }
