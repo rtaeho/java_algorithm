@@ -33,10 +33,10 @@ public class Main {
             }
 
             if (!hasA) {
-                arr[i][N - 1] = 'A';
+                arr[i][0] = 'A';
             }
             if (!hasB) {
-                arr[i][N - 1] = 'B';
+                arr[i][0] = 'B';
             }
 
             for (int j = 0; j < N; j++) {
