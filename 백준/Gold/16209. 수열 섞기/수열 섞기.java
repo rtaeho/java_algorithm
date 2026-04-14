@@ -2,48 +2,89 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Deque;
+import java.util.List;
 import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st;
         int N = Integer.parseInt(br.readLine());
-        st = new StringTokenizer(br.readLine());
-        Integer[] arr = new Integer[N];
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        List<Integer> negative = new ArrayList<>();
+        List<Integer> positive = new ArrayList<>();
+
         for (int i = 0; i < N; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
-        }
-        Arrays.sort(arr, (a, b) -> b - a);
-
-        Deque<Integer> deque = new ArrayDeque<>();
-
-        boolean turn = true; // true가 왼쪽
-
-        for (int i : arr) {
-            if (i < 0) {
-                if (turn) {
-                    deque.addLast(i);
-                } else {
-                    deque.addFirst(i);
-                }
-                turn = !turn;
+            int x = Integer.parseInt(st.nextToken());
+            if (x < 0) {
+                negative.add(x);
             } else {
-                if (turn) {
-                    deque.addFirst(i);
-                } else {
-                    deque.addLast(i);
-                }
+                positive.add(x);
             }
-            turn = !turn;
         }
+
+        positive.sort(Collections.reverseOrder());
+        Collections.sort(negative);
+
+        Deque<Integer> posDeque = new ArrayDeque<>();
+        boolean addToFront = true;
+        for (int x : positive) {
+            if (addToFront) {
+                posDeque.addFirst(x);
+            } else {
+                posDeque.addLast(x);
+            }
+            addToFront = !addToFront;
+        }
+
+        Deque<Integer> negDeque = new ArrayDeque<>();
+        addToFront = true;
+        for (int x : negative) {
+            if (addToFront) {
+                negDeque.addFirst(x);
+            } else {
+                negDeque.addLast(x);
+            }
+            addToFront = !addToFront;
+        }
+
+        List<Integer> posList = new ArrayList<>(posDeque);
+        List<Integer> negList = new ArrayList<>(negDeque);
 
         StringBuilder sb = new StringBuilder();
-        while (!deque.isEmpty()) {
-            sb.append(deque.pollFirst()).append(" ");
+
+        if (negative.isEmpty()) {
+            for (int x : posList) {
+                sb.append(x).append(' ');
+            }
+        } else if (positive.isEmpty()) {
+            for (int x : negList) {
+                sb.append(x).append(' ');
+            }
+        } else {
+            int posFirst = posList.get(0);
+            int posLast = posList.get(posList.size() - 1);
+            int negFirst = negList.get(0);
+            int negLast = negList.get(negList.size() - 1);
+
+            if (posFirst < posLast) {
+                Collections.reverse(posList);
+            }
+            if (Math.abs(negFirst) > Math.abs(negLast)) {
+                Collections.reverse(negList);
+            }
+
+            for (int x : posList) {
+                sb.append(x).append(' ');
+            }
+            for (int x : negList) {
+                sb.append(x).append(' ');
+            }
         }
-        System.out.println(sb);
+
+        System.out.println(sb.toString().trim());
     }
 }
