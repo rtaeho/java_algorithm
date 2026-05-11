@@ -1,30 +1,37 @@
 import java.util.*;
 
+class Job {
+    int number;
+    int priority;
+    public Job(int number, int priority) {
+        this.number = number;
+        this.priority = priority;
+    }
+}
+
 class Solution {
     public int solution(int[] priorities, int location) {
-        Queue<int[]> queue = new LinkedList<>();
+        Queue<Job> q = new LinkedList<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+
         for (int i = 0; i < priorities.length; i++) {
-            queue.add(new int[]{i, priorities[i]});
+            q.offer(new Job(i, priorities[i]));
+            pq.offer(priorities[i]);
         }
 
-        Arrays.sort(priorities);
-        int size = priorities.length;
-        int answer = 0;
-
-        while (!queue.isEmpty()) {
-            int[] current = queue.poll();
-            
-            if (current[1] == priorities[size - 1 - answer]) {
-                answer++;
-                
-                if (current[0] == location) {
-                    return answer;
+        int cnt = 0;
+        while (!q.isEmpty()) {
+            Job current = q.poll();
+            if (current.priority == pq.peek()) {
+                cnt++;
+                pq.poll();
+                if (current.number == location) {
+                    return cnt;
                 }
             } else {
-                queue.add(current);
+                q.add(current);
             }
         }
-
-        return answer;
+        return cnt;
     }
 }
