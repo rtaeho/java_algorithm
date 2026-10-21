@@ -1,58 +1,59 @@
 import java.util.*;
 
+class Song{
+    int id;
+    String genre;
+    int plays;
+
+    public Song(int id, String genre, int plays){
+        this.id = id;
+        this.genre = genre;
+        this.plays = plays;
+    }
+}
+
 class Solution {
-    static class Song{
-        int play;
-        int idx;
-        
-        public Song(int play, int idx){
-            this.play = play;
-            this.idx = idx;
-        }
-    }
-    static class Rank{
-        int total;
-        PriorityQueue<Song> pq;
-        
-        public Rank(){
-            this.pq = new PriorityQueue<>((s1, s2) ->{
-                if(s1.play == s2.play){
-                    return Integer.compare(s1.idx, s2.idx);
-                }
-                return Integer.compare(s2.play, s1.play);
-            });
-            this.total = 0;
-        }
-    }
     public int[] solution(String[] genres, int[] plays) {
-        HashMap<String, Rank> map = new HashMap<>();
-        for(int i = 0; i < genres.length; i++){
-            String genre = genres[i];
-            int playCnt = plays[i];
-            Rank rank = map.getOrDefault(genre, new Rank());
-            rank.total += playCnt;
-            rank.pq.offer(new Song(playCnt, i));
-            map.put(genre, rank);
-        }
-        List<Map.Entry<String, Rank>> entryList = new LinkedList<>(map.entrySet());
-        entryList.sort((o1, o2) -> {
-            return Integer.compare(o2.getValue().total, o1.getValue().total);
-        });
-        
-        List<Integer> answerList = new LinkedList<>();
-        int idx = 0;
-        for(Map.Entry<String, Rank> entry : entryList){
-            PriorityQueue<Song> songPQ = entry.getValue().pq;
-            if(songPQ.size() > 1){
-                answerList.add(songPQ.poll().idx);
+        HashMap<String, Integer> hm = new HashMap<>();
+        PriorityQueue<Song> pq = new PriorityQueue<>((a, b) -> {               
+            if(!hm.get(a.genre).equals(hm.get(b.genre))){                     
+                return hm.get(b.genre) - hm.get(a.genre);                     
             }
-            answerList.add(songPQ.poll().idx);
+            else{
+                if(a.plays == b.plays){
+                    return a.id - b.id;                                       
+                }
+                else{
+                    return b.plays - a.plays;                                 
+                }
+            }
+        });
+
+        for(int i = 0; i < genres.length; i++){
+            hm.put(genres[i], hm.getOrDefault(genres[i], 0) + plays[i]);
         }
-    
-        int[] answer = new int[answerList.size()];
-        for (int i = 0; i < answerList.size(); i++) {
-            answer[i] = answerList.get(i);
+
+        for(int i = 0; i < genres.length; i++){
+            pq.offer(new Song(i, genres[i], plays[i]));
         }
-        return answer;
+
+        int[] answer = new int[genres.length];
+        int idx = 0;                                                           
+
+        String gen = "";
+        int cnt = 0;
+        for(int i = 0; i < genres.length; i++){
+            Song s = pq.poll();
+            if(!gen.equals(s.genre)){                                         
+                gen = s.genre;
+                cnt = 0;
+            }
+            if(cnt >= 2){
+                continue;
+            }
+            cnt++;
+            answer[idx++] = s.id;                                             
+        }
+        return Arrays.copyOf(answer, idx);                                     
     }
 }
