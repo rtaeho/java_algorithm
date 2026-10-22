@@ -1,18 +1,21 @@
 import java.util.*;
 
 public class Solution {
-    public int[] solution(int [] arr) {
-        LinkedList<Integer> list = new LinkedList<>();
-        list.add(arr[0]);
-        int lastNum = arr[0];
-        for(int num : arr){
-            if(num == lastNum){
+    public int[] solution(int []arr) {
+        Deque<Integer> dq = new ArrayDeque<>();
+        for(int i = 0; i < arr.length; i++){
+            if(!dq.isEmpty() && dq.peek() == arr[i]){
                 continue;
             }
-            list.add(num);
-            lastNum = num;
+            dq.push(arr[i]);
         }
-        int[] answer = list.stream().mapToInt(i->i).toArray();
+        int[] answer = new int[dq.size()];
+        int idx = 0;
+        
+        while(!dq.isEmpty()){
+            answer[idx++] = dq.pollLast();    
+        }
+        
         return answer;
     }
 }
