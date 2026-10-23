@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 60.2 MB, 시간: 14.23 ms
+메모리: 89.1 MB, 시간: 5.68 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 05월 19일 15:11:32
+2026년 10월 23일 17:02:05
 
 ### 문제 설명
 
@@ -30,7 +30,7 @@
 </ol>
 
 <p>예를 들어</p>
-<div class="highlight"><pre class="codehilite"><code>- 0ms 시점에 3ms가 소요되는 0번 작업 요청
+<div class="highlight" bis_skin_checked="1"><pre class="codehilite"><code>- 0ms 시점에 3ms가 소요되는 0번 작업 요청
 - 1ms 시점에 9ms가 소요되는 1번 작업 요청
 - 3ms 시점에 5ms가 소요되는 2번 작업 요청
 </code></pre></div>
